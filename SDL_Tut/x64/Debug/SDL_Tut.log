@@ -1,0 +1,7 @@
+﻿main.obj : error LNK2019: unresolved external symbol SDL_GetError referenced in function SDL_main
+main.obj : error LNK2019: unresolved external symbol SDL_InitSubSystem referenced in function SDL_main
+main.obj : error LNK2019: unresolved external symbol SDL_Quit referenced in function SDL_main
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\Miko\Desktop\SDL2-2.24.2\lib\x86\SDL2.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Miko\Desktop\SDL2-2.24.2\lib\x86\SDL2main.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\Miko\Desktop\VS_Studios\SDL_Tut\x64\Debug\SDL_Tut.exe : fatal error LNK1120: 4 unresolved externals

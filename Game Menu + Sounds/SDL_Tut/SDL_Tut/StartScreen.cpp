@@ -19,7 +19,7 @@ StartScreen::StartScreen() {
 	m_pTwoPlayerMode = new Texture("2 PLAYERS ", "ARCADEPI.ttf", 32, { 230,230,230 });
 	m_pCursor = new Texture("Cursor.png");
 	
-	//Nottom Bar Entites
+	//Bottom Bar Entites
 	m_pBottomBar = new GameEntity(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.7f);
 	m_pNamco = new Texture("atari", "namco__.ttf", 36, { 200,0,0 });
 	m_pDates = new Texture("1976 ATARI LTD.", "ARCADEPI.ttf", 32, { 230,230,230 });
@@ -108,8 +108,6 @@ StartScreen::StartScreen() {
 	ResetAnimation();
 	//ScreenShake();
 
-	//m_pStars = BackgroundStars::Instance();
-	//m_pStars->Scroll(true);
 	m_pAudioManager = AudioManager::Instance();
 	for (int i = 0; i < 6; i++) {
 		mTitleAnimation[i] = false;

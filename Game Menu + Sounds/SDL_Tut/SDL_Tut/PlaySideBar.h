@@ -4,31 +4,32 @@
 #include "Scoreboard.h"
 #include "AudioManager.h"
 
-
-#include "GameEntity.h"
 class PlaySideBar : public GameEntity
 {
+
 private:
 	Timer* m_pTimer;
 	AudioManager* m_pAudio;
+
 	Texture* m_pBackground;
-
-	Texture* m_pHighLabel;
 	Texture* m_pScoreLabel;
+	Texture* m_pLivesLabel;
+	
 	Scoreboard* m_pHighScoreboard;
+	Scoreboard* m_pLives;
 
-	Texture* m_pPlayerOneLabel;
-	float mBlinkTimer;
-	float mBlinkInterval;
-	bool mPlayerOneLabelVisible;
-	Scoreboard* m_pPlayerOneScore;
+	Texture* m_pRightWall;
+	Texture* m_pLeftWall;
+	Texture* m_pTopWall;
+
 
 public:
 	PlaySideBar();
 	~PlaySideBar();
 
-	void Update() override;
-	void Render() override;
+	void Update();
+	void Render();
+
 };
 
-#endif // !_PLAYSIDEBAR_H
+#endif // !

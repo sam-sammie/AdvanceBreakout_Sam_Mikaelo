@@ -111,9 +111,11 @@ void Level::HandleCollisions() {
 
 }
 
-void Level::HandleBrickBreak() {
+void Level::HandleBrickBreak()
+{
 
 }
+
 
 void Level::HandlePlayerDeath() {
 	if (!m_pPlayer->IsAnimating()) {

@@ -52,6 +52,7 @@ int Player::Lives() {
 void Player::AddScore(int change) {
 	mScore += change;
 }
+
 int Player::Score() {
 	return mScore;
 }

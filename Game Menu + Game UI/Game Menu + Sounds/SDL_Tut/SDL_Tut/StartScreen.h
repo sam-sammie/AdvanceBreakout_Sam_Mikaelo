@@ -13,6 +13,9 @@ private:
 	Timer* m_pTimer;
 	InputManager* m_pInputManager;
 	AudioManager* m_pAudioManager;
+
+	Texture* m_pBackdrop;
+
 	// Top Bar Entities
 	GameEntity* m_pTopBar;
 	Texture* m_pPlayerOne;

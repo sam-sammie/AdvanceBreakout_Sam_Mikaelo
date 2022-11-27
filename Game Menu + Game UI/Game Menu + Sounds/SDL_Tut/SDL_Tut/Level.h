@@ -2,6 +2,7 @@
 #define _LEVEL_H
 #include "PlaySideBar.h"
 #include "Player.h"
+#include "Brick.h"
 
 class Level : public GameEntity
 {

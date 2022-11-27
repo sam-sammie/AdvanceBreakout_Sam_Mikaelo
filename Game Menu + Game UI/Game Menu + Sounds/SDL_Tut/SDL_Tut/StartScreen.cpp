@@ -4,6 +4,9 @@ StartScreen::StartScreen() {
 	m_pTimer = Timer::Instance();
 	m_pInputManager = InputManager::Instance();
 
+	m_pBackdrop = new Texture("Backdrop.png");
+	m_pBackdrop->Position(Graphics::SCREEN_WIDTH * 0.50f, Graphics::SCREEN_HEIGHT * 0.50f);
+
 	// Top bar entities
 	m_pTopBar = new GameEntity(Graphics::SCREEN_WIDTH * 0.5f, 80.0f);
 	m_pPlayerOne = new Texture("1UP", "ARCADEPI.ttf", 32, { 200,0,0 });
@@ -169,6 +172,10 @@ StartScreen::~StartScreen() {
 	delete m_pTopScore;
 	m_pTopScore = nullptr;
 
+	delete m_pBackdrop;
+	m_pBackdrop = nullptr;
+
+
 	AudioManager::Release();
 	m_pAudioManager = nullptr;
 }
@@ -261,6 +268,7 @@ void StartScreen::Update() {
 
 void StartScreen::Render() {
 
+	m_pBackdrop->Render();
 	m_pRights->Render(); 
 	m_pPlayerOne->Render();
 	m_pPlayerTwo->Render();
@@ -276,6 +284,7 @@ void StartScreen::Render() {
 	m_pPlayerTwoScore->Render();
 	m_pTopScore->Render();
 	m_pLogo->Render();
+
 
 
 	if (!mAnimationDone) {

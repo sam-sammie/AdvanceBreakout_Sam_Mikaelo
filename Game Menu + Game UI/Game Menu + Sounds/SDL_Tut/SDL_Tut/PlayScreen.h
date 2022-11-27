@@ -7,6 +7,7 @@
 #include "InputManager.h"
 #include "Level.h"
 #include "Player.h"
+#include "Brick.h"
 
 class PlayScreen : public GameEntity
 {
@@ -15,13 +16,9 @@ private:
 	AudioManager* m_pAudio;
 	PlaySideBar* m_pSideBar;
 
-	//Bricks
-	Texture* m_pRedBricks;
-	Texture* m_pOrangeBricks;
-	Texture* m_pGreenBricks;
-	Texture* m_pYellowBricks;
 
-	//Paddle Animation + Movement
+	Brick* m_pTesting;
+
 	/*AnimatedTexture* m_pPaddle;
 	Texture* m_pAnimatedPaddle;*/
 

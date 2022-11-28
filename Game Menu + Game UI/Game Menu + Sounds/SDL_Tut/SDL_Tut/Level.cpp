@@ -19,9 +19,9 @@ Level::Level(int stage, PlaySideBar* sideBar, Player* player) {
 	mRespawnTimer = 0.0f;
 	mRespawnLabelOnScreen = 2.0f;
 
-	m_pGameOverLabel = new Texture("GAME OVER", "emulogic.ttf", 32, { 150,0,0 });
+	m_pGameOverLabel = new Texture("GAME OVER", "emulogic.ttf", 62, { 150,0,0 });
 	m_pGameOverLabel->Parent(this);
-	m_pGameOverLabel->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.5f);
+	m_pGameOverLabel->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.6f);
 
 	mGameOverDelay = 6.0f;
 	mGameOverTimer = 0.0f;

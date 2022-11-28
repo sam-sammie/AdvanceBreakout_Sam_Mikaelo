@@ -42,11 +42,6 @@ PlaySideBar::PlaySideBar()
 	m_pLives = new Scoreboard();
 	m_pLives->Parent(this);
 	m_pLives->Position(-140.0f, 55.0f);
-
-	/*m_PlayerOneScore = new Scoreboard();
-	m_PlayerOneScore->Parent(this);
-	m_PlayerOneScore->Position(-500.0f, 55.0f);*/
-
 }
 
 PlaySideBar::~PlaySideBar()
@@ -119,7 +114,6 @@ void PlaySideBar::Render()
 	m_pPlayerScoreboard->Render();
 	m_pScoreLabel->Render();
 	m_pLives->Render();
-	//m_PlayerOneScore->Render();
 }
 
 void PlaySideBar::AddScore2(int score) {

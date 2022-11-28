@@ -8,27 +8,27 @@ Brick::Brick()
 	
 	mVisible = false;
 	mAnimating = false;
+
 	
-	m_pRedBreakAnimation = new AnimatedTexture("Bricks/Red Destroy Animation.png", 0, 0, 67, 100, 8, 1.0f, AnimatedTexture::Vertical);
+	m_pRedBreakAnimation = new AnimatedTexture("Bricks/Red Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pRedBreakAnimation->Parent(this);
 	m_pRedBreakAnimation->Scale(Vector2(2.0f, 2.0f));
-	m_pRedBreakAnimation->Position(-350.0f, -600.0f);
+	m_pRedBreakAnimation->Position(-235.0f, -600.0f);
 
-	m_pOrangeBreakAnimation = new AnimatedTexture("Bricks/Orange Destroy Animation.png", 0, 0, 67, 100, 8, 1.0f, AnimatedTexture::Vertical);
+	m_pOrangeBreakAnimation = new AnimatedTexture("Bricks/Orange Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pOrangeBreakAnimation->Parent(this);
 	m_pOrangeBreakAnimation->Scale(Vector2(2.0f, 2.0f));
-	m_pOrangeBreakAnimation->Position(-350.0f, -550.0f);
+	m_pOrangeBreakAnimation->Position(-235.0f, -535.0f);
 
-	m_pGreenBreakAnimation = new AnimatedTexture("Bricks/Green Destroy Animation.png", 0, 0, 67, 100, 8, 1.0f, AnimatedTexture::Vertical);
+	m_pGreenBreakAnimation = new AnimatedTexture("Bricks/Green Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pGreenBreakAnimation->Parent(this);
 	m_pGreenBreakAnimation->Scale(Vector2(2.0f, 2.0f));
-	m_pGreenBreakAnimation->Position(-350.0f, -500.0f);
+	m_pGreenBreakAnimation->Position(-235.0f, -470.0f);
 
-
-	m_pYellowBreakAnimation = new AnimatedTexture("Bricks/Yellow Destroy Animation.png", 0, 0, 67, 100, 8, 1.0f, AnimatedTexture::Vertical);
+	m_pYellowBreakAnimation = new AnimatedTexture("Bricks/Yellow Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pYellowBreakAnimation->Parent(this);
 	m_pYellowBreakAnimation->Scale(Vector2(2.0f, 2.0f));
-	m_pYellowBreakAnimation->Position(-350.0f, -450.0f);
+	m_pYellowBreakAnimation->Position(-235.0f, -405.0f);
 
 }
 
@@ -55,10 +55,20 @@ Brick::~Brick()
 
 void Brick::Update()
 {
-	m_pRedBreakAnimation->Update();
-	m_pOrangeBreakAnimation->Update();
-	m_pGreenBreakAnimation->Update();
-	m_pYellowBreakAnimation->Update();
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) {
+		m_pRedBreakAnimation->Update();
+	}
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O)) {
+		m_pOrangeBreakAnimation->Update();
+	}
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I)) {
+		m_pGreenBreakAnimation->Update();
+	}
+	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U)) {
+		m_pYellowBreakAnimation->Update();
+	}
+
+
 }
 
 void Brick::Render()

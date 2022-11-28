@@ -25,9 +25,42 @@ PlayScreen::PlayScreen() {
 	m_pPlayer->Parent(this);
 	m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pTesting = new Brick();
-	m_pTesting->Parent(this);
-	m_pTesting->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
+	m_pBrickRow_1 = new Brick();
+	m_pBrickRow_1->Parent(this);
+	m_pBrickRow_1->Position(Graphics::SCREEN_WIDTH * 0.3f, Graphics::SCREEN_HEIGHT * 0.8f);
+
+	m_pBrickRow_2 = new Brick();
+	m_pBrickRow_2->Parent(this);
+	m_pBrickRow_2->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
+
+	m_pBrickRow_3 = new Brick();
+	m_pBrickRow_3->Parent(this);
+	m_pBrickRow_3->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.8f);
+
+	m_pBrickRow_4 = new Brick();
+	m_pBrickRow_4->Parent(this);
+	m_pBrickRow_4->Position(Graphics::SCREEN_WIDTH * 0.6f, Graphics::SCREEN_HEIGHT * 0.8f);
+
+	m_pBrickRow_5 = new Brick();
+	m_pBrickRow_5->Parent(this);
+	m_pBrickRow_5->Position(Graphics::SCREEN_WIDTH * 0.7f, Graphics::SCREEN_HEIGHT * 0.8f);
+
+	m_pBrickRow_6 = new Brick();
+	m_pBrickRow_6->Parent(this);
+	m_pBrickRow_6->Position(Graphics::SCREEN_WIDTH * 0.8f, Graphics::SCREEN_HEIGHT * 0.8f);
+
+	m_pBrickRow_7 = new Brick();
+	m_pBrickRow_7->Parent(this);
+	m_pBrickRow_7->Position(Graphics::SCREEN_WIDTH * 0.9f, Graphics::SCREEN_HEIGHT * 0.8f);
+
+	m_pBrickRow_8 = new Brick();
+	m_pBrickRow_8->Parent(this);
+	m_pBrickRow_8->Position(Graphics::SCREEN_WIDTH * 1.0f, Graphics::SCREEN_HEIGHT * 0.8f);
+
+	m_pBrickRow_9 = new Brick();
+	m_pBrickRow_9->Parent(this);
+	m_pBrickRow_9->Position(Graphics::SCREEN_WIDTH * 1.1f, Graphics::SCREEN_HEIGHT * 0.8f);
+	
 	m_pLevel = nullptr;
 	mLevelStarted = false;
 }
@@ -45,15 +78,51 @@ PlayScreen::~PlayScreen() {
 	delete m_pPlayer;
 	m_pPlayer = nullptr;
 
-	delete m_pTesting;
-	m_pTesting = nullptr;
+
+
+	delete m_pBrickRow_1;
+	m_pBrickRow_1 = nullptr;
+	
+	delete m_pBrickRow_2;
+	m_pBrickRow_2 = nullptr;
+	
+	delete m_pBrickRow_3;
+	m_pBrickRow_3 = nullptr;
+
+	delete m_pBrickRow_4;
+	m_pBrickRow_4 = nullptr;
+
+	delete m_pBrickRow_5;
+	m_pBrickRow_5 = nullptr;
+
+	delete m_pBrickRow_6;
+	m_pBrickRow_6 = nullptr;
+
+	delete m_pBrickRow_7;
+	m_pBrickRow_7 = nullptr;
+
+	delete m_pBrickRow_8;
+	m_pBrickRow_8 = nullptr;
+
+	delete m_pBrickRow_9;
+	m_pBrickRow_9 = nullptr;
+
+
 
 }
 
 void PlayScreen::Render() {
 	
 	m_pSideBar->Render();
-	m_pTesting->Render();
+	m_pBrickRow_1->Render();
+	m_pBrickRow_2->Render();
+	m_pBrickRow_3->Render();
+	m_pBrickRow_4->Render();
+	m_pBrickRow_5->Render();
+	m_pBrickRow_6->Render();
+	m_pBrickRow_7->Render();
+	m_pBrickRow_8->Render();
+	m_pBrickRow_9->Render();
 	if (mGameStarted) {
 		if (mLevelStarted) {
 			m_pLevel->Render();
@@ -66,7 +135,6 @@ void PlayScreen::Render() {
 void PlayScreen::Update() {
 	m_pSideBar->Update();
 	m_pPlayer->Update();
-	m_pTesting->Update();
 	if (!mAnimationDone) {
 		mAnimationTimer += m_pTimer->DeltaTime();
 		Position(Lerp(mAnimationStartPos, mAnimationEndPos, mAnimationTimer / mAnimationTotalTime));
@@ -95,18 +163,54 @@ void PlayScreen::Update() {
 		mGameStarted = true;
 	}
 	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) {
+		m_pBrickRow_1->Update();
+		m_pBrickRow_2->Update();
+		m_pBrickRow_3->Update();
+		m_pBrickRow_4->Update();
+		m_pBrickRow_5->Update();
+		m_pBrickRow_6->Update();
+		m_pBrickRow_7->Update();
+		m_pBrickRow_8->Update();
+		m_pBrickRow_9->Update();
 		m_pPlayer->RedBrickDestroyed();
 		m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 	}
 	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O)) {
+		m_pBrickRow_1->Update();
+		m_pBrickRow_2->Update();
+		m_pBrickRow_3->Update();
+		m_pBrickRow_4->Update();
+		m_pBrickRow_5->Update();
+		m_pBrickRow_6->Update();
+		m_pBrickRow_7->Update();
+		m_pBrickRow_8->Update();
+		m_pBrickRow_9->Update();
 		m_pPlayer->OrangeBrickDestroyed();
 		m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 	}
 	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I)) {
+		m_pBrickRow_1->Update();
+		m_pBrickRow_2->Update();
+		m_pBrickRow_3->Update();
+		m_pBrickRow_4->Update();
+		m_pBrickRow_5->Update();
+		m_pBrickRow_6->Update();
+		m_pBrickRow_7->Update();
+		m_pBrickRow_8->Update();
+		m_pBrickRow_9->Update();
 		m_pPlayer->GreenBrickDestroyed();
 		m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 	}
 	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U)) {
+		m_pBrickRow_1->Update();
+		m_pBrickRow_2->Update();
+		m_pBrickRow_3->Update();
+		m_pBrickRow_4->Update();
+		m_pBrickRow_5->Update();
+		m_pBrickRow_6->Update();
+		m_pBrickRow_7->Update();
+		m_pBrickRow_8->Update();
+		m_pBrickRow_9->Update();
 		m_pPlayer->YellowBrickDestroyed();
 		m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 	}

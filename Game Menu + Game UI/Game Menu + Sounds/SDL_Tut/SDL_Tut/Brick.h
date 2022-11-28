@@ -8,13 +8,12 @@ using namespace SDLFramework;
 
 class Brick : public GameEntity
 {
+
 private:
+	
 	Timer* m_pTimer;
 	InputManager* m_pInput;
 	AudioManager* m_pAudio;
-
-	Texture* m_pYellowBrick;
-
 
 	AnimatedTexture* m_pRedBreakAnimation;
 	AnimatedTexture* m_pOrangeBreakAnimation;

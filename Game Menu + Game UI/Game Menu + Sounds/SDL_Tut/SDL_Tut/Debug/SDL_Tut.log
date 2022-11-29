@@ -1,24 +1,4 @@
-﻿  AnimatedTexture.cpp
-  AssetManager.cpp
-  AudioManager.cpp
-  Brick.cpp
-  GameEntity.cpp
-  GameManager.cpp
-  Graphics.cpp
-  InputManager.cpp
-  Level.cpp
-  PlayScreen.cpp
-  PlaySideBar.cpp
-  Player.cpp
-  Scoreboard.cpp
-  ScreenManager.cpp
-  StartScreen.cpp
-D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Game Menu + Game UI\Game Menu + Sounds\SDL_Tut\SDL_Tut\StartScreen.cpp(312,16): warning C4552: '-': result of expression not used
-  Texture.cpp
-  Timer.cpp
-  main.cpp
-  Generating Code...
-  SDL_Tut.vcxproj -> D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Game Menu + Game UI\Game Menu + Sounds\SDL_Tut\Debug\SDL_Tut.exe
+﻿  SDL_Tut.vcxproj -> D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Game Menu + Game UI\Game Menu + Sounds\SDL_Tut\Debug\SDL_Tut.exe
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Game Menu + Game UI\Game Menu + Sounds\SDL_Tut\SDL_Tut\..\dep\devel\x86\libjpeg-9.dll
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Game Menu + Game UI\Game Menu + Sounds\SDL_Tut\SDL_Tut\..\dep\devel\x86\libmodplug-1.dll
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Game Menu + Game UI\Game Menu + Sounds\SDL_Tut\SDL_Tut\..\dep\devel\x86\libogg-0.dll

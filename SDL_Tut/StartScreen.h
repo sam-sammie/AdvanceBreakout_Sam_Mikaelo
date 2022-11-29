@@ -4,6 +4,7 @@
 #include "InputManager.h"
 #include "Scoreboard.h"
 #include "BackGroundStars.h"
+#include "AudioManager.h"
 
 using namespace SDLFramework;
 
@@ -11,7 +12,7 @@ class StartScreen : public GameEntity {
 private:
 	Timer* m_pTimer;
 	InputManager* m_pInputManager;
-
+	AudioManager* m_pAudioManager;
 	// Top Bar Entities
 	GameEntity* m_pTopBar;
 	Texture* m_pPlayerOne;
@@ -25,7 +26,7 @@ private:
 	GameEntity* m_pPlayModes;
 	Texture* m_pOnePlayerMode;
 	Texture* m_pTwoPlayerMode;
-	Texture* m_pCursor;
+	AnimatedTexture* m_pCursor;
 	Vector2 mCursorStartPos;
 	Vector2 mCursorOffset;
 	int mSelectedMode;
@@ -47,6 +48,13 @@ private:
 	bool mAnimationDone;
 
 	BackgroundStars* m_pStars;
+
+	bool mTitleAnimation[7];
+
+	Vector2 mTitleAnimationStartPos[7];
+	Vector2 mTitleAnimationEndPos[7];
+	GameEntity* mTitleText[7];
+
 public:
 	StartScreen();
 	~StartScreen();

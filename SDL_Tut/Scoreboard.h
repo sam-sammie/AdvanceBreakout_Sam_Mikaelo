@@ -17,6 +17,7 @@ public:
 	~Scoreboard();
 
 	void Score(int score);
+	void Lives(int lives);
 	void Render();
 
 private:

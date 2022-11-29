@@ -3,10 +3,9 @@
 #include "Timer.h"
 #include "Scoreboard.h"
 #include "AudioManager.h"
+
 class PlaySideBar : public GameEntity
 {
-private:
-	static const int MAX_BRICKS_TEXTURES = 9;
 
 private:
 	Timer* m_pTimer;
@@ -15,26 +14,30 @@ private:
 	Texture* m_pBackground;
 	Texture* m_pScoreLabel;
 	Texture* m_pLivesLabel;
-	Scoreboard* m_pHighScoreboard;
+	
+	Scoreboard* m_pPlayerScoreboard;
+	Scoreboard* m_pLives;
 
 	Texture* m_pRightWall;
 	Texture* m_pLeftWall;
 	Texture* m_pTopWall;
 
-	Texture* m_pRedBricks;
-	Texture* m_pOrangeBricks;
-	Texture* m_pGreenBricks;
-	Texture* m_pYellowBricks;
+	int mLevel;
 
+	Scoreboard* m_PlayerOneScore;
 
-	
 public:
 	PlaySideBar();
 	~PlaySideBar();
 
-	void Update();
-	void Render();
+	void SetPlayerScore(int score);
+	void SetPlayerLives(int lives);
+	void SetLevel(int level);
 
+	void Update() override;
+	void Render() override;
+
+	void AddScore2(int score);
 };
 
-#endif // !
+#endif // !_PLAYSIDEBAR_H

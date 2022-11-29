@@ -24,8 +24,6 @@ namespace SDLFramework {
 		AudioManager* m_pAudioManager;
 		ScreenManager* m_pScreenManager;
 
-
-
 	public:
 		static GameManager* Instance();
 		static void Release();

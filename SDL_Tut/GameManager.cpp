@@ -41,6 +41,7 @@ namespace SDLFramework {
 	{
 		m_pInputManager->Update();
 		m_pScreenManager->Update();
+
 	}
 
 	void GameManager::LateUpdate() {

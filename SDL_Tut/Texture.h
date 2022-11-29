@@ -3,7 +3,6 @@
 #include "GameEntity.h"
 #include "AssetManager.h"
 
-
 namespace SDLFramework {
 	class Texture : public GameEntity
 	{

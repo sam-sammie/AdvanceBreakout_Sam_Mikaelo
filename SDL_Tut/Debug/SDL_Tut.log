@@ -1,15 +1,4 @@
-﻿  GameManager.cpp
-  main.cpp
-  PlayScreen.cpp
-  PlaySideBar.cpp
-  ScreenManager.cpp
-  StartScreen.cpp
-C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.cpp(312,16): warning C4552: '-': result of expression not used
-  Texture.cpp
-  Timer.cpp
-  Generating Code...
-  LINK : C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe not found or not built by the last incremental link; performing full link
-  SDL_Tut.vcxproj -> C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
+﻿  SDL_Tut.vcxproj -> C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libmodplug-1.dll
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libogg-0.dll

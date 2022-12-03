@@ -1,24 +1,4 @@
-﻿  AnimatedTexture.cpp
-  AssetManager.cpp
-  AudioManager.cpp
-  Ball.cpp
-  Brick.cpp
-  GameEntity.cpp
-  GameManager.cpp
-  Graphics.cpp
-  InputManager.cpp
-  Level.cpp
-  main.cpp
-  Player.cpp
-  PlayScreen.cpp
-  PlaySideBar.cpp
-  Scoreboard.cpp
-  ScreenManager.cpp
-  StartScreen.cpp
-D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.cpp(312,16): warning C4552: '-': result of expression not used
-  Texture.cpp
-  Timer.cpp
-  Generating Code...
+﻿  PlayScreen.cpp
   SDL_Tut.vcxproj -> D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
   The system cannot find the path specified.
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADE.TTF

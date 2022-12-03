@@ -53,20 +53,27 @@ Brick::~Brick()
 
 }
 
-void Brick::Update()
+void Brick::Update(int keypress)
 {
 	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) {
 		m_pRedBreakAnimation->Update();
+
 	}
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O)) {
+	else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
+	{
 		m_pOrangeBreakAnimation->Update();
 	}
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I)) {
+	else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I)) 
+	{
 		m_pGreenBreakAnimation->Update();
 	}
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U)) {
+	else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U)) 
+	{
 		m_pYellowBreakAnimation->Update();
 	}
+
+
+	
 
 
 }

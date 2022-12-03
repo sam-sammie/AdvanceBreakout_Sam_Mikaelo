@@ -3,7 +3,7 @@
 #include "Timer.h"
 #include "InputManager.h"
 #include "AnimatedTexture.h"
-
+#include "Player.h"
 
 using namespace SDLFramework;
 class Ball : public GameEntity
@@ -28,7 +28,7 @@ public:
 
 	void Update() override;
 	void Render() override;
-
+	void Draw(SDL_Renderer* renderer);
 };
 
 #endif // !_BALL_H

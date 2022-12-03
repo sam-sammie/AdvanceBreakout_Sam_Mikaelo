@@ -17,7 +17,6 @@ private:
 	AudioManager* m_pAudio;
 	PlaySideBar* m_pSideBar;
 
-
 	Brick* m_pBrickRow_1;
 	Brick* m_pBrickRow_2;
 	Brick* m_pBrickRow_3;
@@ -28,8 +27,7 @@ private:
 	Brick* m_pBrickRow_8;
 	Brick* m_pBrickRow_9;
 
-	/*AnimatedTexture* m_pPaddle;
-	Texture* m_pAnimatedPaddle;*/
+	Brick* brick[9];
 
 	//Animation Varibles
 	Vector2 mAnimationStartPos;
@@ -56,7 +54,6 @@ public:
 	void StartNextLevel();
 
 	bool GameOver();
-
 
 	void Update() override;
 	void Render() override;

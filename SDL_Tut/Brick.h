@@ -35,8 +35,8 @@ public:
 	void GreenBrickDestroyed();
 	void YellowBrickDestroyed();
 
-	void Update() override;
-	void Render() override;
+	void Update(int keypress);
+	void Render();
 
 };
 

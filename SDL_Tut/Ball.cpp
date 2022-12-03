@@ -9,7 +9,6 @@ Ball::Ball() {
 	m_pBall->Position(Vec2_Zero);
 
 	mVisible = false;
-
 	mMoveSpeed = 300.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
 };
@@ -23,10 +22,11 @@ Ball::~Ball() {
 };
 
 void Ball::Movement() {
-	if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
-		Translate(Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
+	if (m_pInput->KeyDown(SDL_SCANCODE_SPACE)) {
+		Translate(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}
-	else if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
+	
+	/*else if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
 		Translate(-Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}
 	else if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
@@ -34,7 +34,7 @@ void Ball::Movement() {
 	}
 	else if (m_pInput->KeyDown(SDL_SCANCODE_S)) {
 		Translate(Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
-	}
+	}*/
 
 
 	Vector2 pos = Position(Local);
@@ -46,6 +46,7 @@ void Ball::Movement() {
 	}
 
 	Position(pos);
+
 }
 
 void Ball::Update() {

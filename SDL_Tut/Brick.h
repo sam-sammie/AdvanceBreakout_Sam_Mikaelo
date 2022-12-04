@@ -3,10 +3,11 @@
 #include "AnimatedTexture.h"
 #include "InputManager.h"
 #include "AudioManager.h"
+#include "PhysEntity.h"
 
 using namespace SDLFramework;
 
-class Brick : public GameEntity
+class Brick : public PhysEntity
 {
 
 private:
@@ -14,6 +15,12 @@ private:
 	Timer* m_pTimer;
 	InputManager* m_pInput;
 	AudioManager* m_pAudio;
+	
+	Texture* m_pOrangeBrickTexture;
+	Texture* m_pGreenBrickTexture;
+	Texture* m_pRedBrickTexture;
+	Texture* m_pYellowBrickTexture;
+
 
 	AnimatedTexture* m_pRedBreakAnimation;
 	AnimatedTexture* m_pOrangeBreakAnimation;
@@ -27,13 +34,11 @@ public:
 	Brick();
 	~Brick();
 	
+
 	void Visible(bool visible);
 	bool IsAnimating();
+	bool InDeathAnimation();
 
-	void RedBrickDestroyed();
-	void OrangeBrickDestroyed();
-	void GreenBrickDestroyed();
-	void YellowBrickDestroyed();
 
 	void Update(int keypress);
 	void Render();

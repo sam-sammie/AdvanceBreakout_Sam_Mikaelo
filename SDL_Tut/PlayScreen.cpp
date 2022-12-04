@@ -180,19 +180,17 @@ void PlayScreen::Update() {
 	}
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
 			{
-				for (int i = 0; i <= 8; i++) {
+				for (int i = 0; i < 8; i++) {
+					brick[0] = brick[i - 0];
 					brick[0]->Update(SDL_SCANCODE_P);
-					if(brick[0] = m_pBrickRow_1) {
-						break;
-					}
+					brick[1] = brick[i - 0];
+					brick[1]->Update(SDL_SCANCODE_P);
+					
 				}
 
-				
 				std::cout << "Pressed letter P " << std::endl;
 				m_pPlayer->RedBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
-				
-				
 			}
 			
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))

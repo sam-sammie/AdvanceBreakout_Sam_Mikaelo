@@ -9,6 +9,7 @@
 #include "Player.h"
 #include "Brick.h"
 #include "Ball.h"
+#include <vector>
 
 class PlayScreen : public GameEntity
 {
@@ -27,7 +28,7 @@ private:
 	Brick* m_pBrickRow_8;
 	Brick* m_pBrickRow_9;
 
-	Brick* brick[9];
+	Brick* brick[8];
 
 	//Animation Varibles
 	Vector2 mAnimationStartPos;

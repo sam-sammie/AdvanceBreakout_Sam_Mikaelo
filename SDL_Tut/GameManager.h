@@ -7,6 +7,7 @@
 #include "InputManager.h"
 #include "AudioManager.h"
 #include "ScreenManager.h"
+#include "PhysicsManager.h"
 
 namespace SDLFramework {
 	class GameManager
@@ -23,6 +24,7 @@ namespace SDLFramework {
 		InputManager* m_pInputManager;
 		AudioManager* m_pAudioManager;
 		ScreenManager* m_pScreenManager;
+		PhysicsManager* m_pPhysicsManager;
 
 	public:
 		static GameManager* Instance();

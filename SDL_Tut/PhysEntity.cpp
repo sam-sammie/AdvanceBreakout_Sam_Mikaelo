@@ -22,7 +22,7 @@ void PhysEntity::AddCollider(Collider* collider, Vector2 localPos) {
 		delete m_pBroadPhaseCollider;
 		m_pBroadPhaseCollider = new CircleCollider(furthestDistance, true);
 		m_pBroadPhaseCollider->Parent(this);
-		m_pBroadPhaseCollider->Position(localPos.x * 1.5f, localPos.y * 3.0f); //<--------- you may have to change this to Vec2_Zero
+		m_pBroadPhaseCollider->Position(localPos.x * 1.5f, localPos.y * 3.0f);
 	};
 }
 

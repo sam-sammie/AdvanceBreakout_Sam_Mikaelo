@@ -31,6 +31,12 @@
     <Filter Include="Source Files\Breakout">
       <UniqueIdentifier>{ec25ddba-9835-4f98-b79e-45f3c496c81d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Managers\Physics">
+      <UniqueIdentifier>{5c1fc3a3-f93e-431f-9dfb-e5df57c7248e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{33994940-f462-4287-8837-44c9764d947e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -91,6 +97,21 @@
     <ClCompile Include="Brick.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BoxCollider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsManager.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysEntity.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleCollider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Timer.h">
@@ -149,6 +170,24 @@
     </ClInclude>
     <ClInclude Include="Brick.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider.h">
+      <Filter>Header Files\Managers\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Visual Studio 2022\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h">
+      <Filter>Header Files\Managers\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Header Files\Managers\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsManager.h">
+      <Filter>Header Files\Managers\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysEntity.h">
+      <Filter>Header Files\Managers\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleCollider.h">
+      <Filter>Header Files\Managers\Physics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

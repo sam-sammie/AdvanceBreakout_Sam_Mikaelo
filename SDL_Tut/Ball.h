@@ -4,9 +4,10 @@
 #include "InputManager.h"
 #include "AnimatedTexture.h"
 #include "Player.h"
+#include "PhysEntity.h"
 
 using namespace SDLFramework;
-class Ball : public GameEntity
+class Ball : public PhysEntity
 {
 private:
 	Timer* m_pTimer;
@@ -25,6 +26,8 @@ public:
 	~Ball();
 
 	void Visible(bool visible);
+
+	void Hit(PhysEntity* other) override;
 
 	void Update() override;
 	void Render() override;

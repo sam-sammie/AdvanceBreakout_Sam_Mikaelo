@@ -9,9 +9,9 @@
 #include "Player.h"
 #include "Brick.h"
 #include "Ball.h"
-#include <vector>
-
-class PlayScreen : public GameEntity
+#include "StartScreen.h"
+#include "PhysEntity.h"
+class PlayScreen : public PhysEntity
 {
 private:
 	Timer* m_pTimer;
@@ -28,7 +28,11 @@ private:
 	Brick* m_pBrickRow_8;
 	Brick* m_pBrickRow_9;
 
-	Brick* brick[8];
+	//Arrays
+	Brick* Redbrick[9];
+	Brick* Orangebrick[9];
+	Brick* Greenbrick[9];
+	Brick* Yellowbrick[9];
 
 	//Animation Varibles
 	Vector2 mAnimationStartPos;

@@ -24,8 +24,6 @@ PlayScreen::PlayScreen() {
 	m_pPlayer = new Player();
 	m_pPlayer->Parent(this);
 	m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
-
-
 	
 	m_pBrickRow_1 = new Brick();
 	m_pBrickRow_1->Parent(this);
@@ -63,15 +61,46 @@ PlayScreen::PlayScreen() {
 	m_pBrickRow_9->Parent(this);
 	m_pBrickRow_9->Position(Graphics::SCREEN_WIDTH * 1.1f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	brick[0] = m_pBrickRow_1;
-	brick[1] = m_pBrickRow_2;
-	brick[2] = m_pBrickRow_3;
-	brick[3] = m_pBrickRow_4;
-	brick[4] = m_pBrickRow_5;
-	brick[5] = m_pBrickRow_6;
-	brick[6] = m_pBrickRow_7;
-	brick[7] = m_pBrickRow_8;
-	brick[8] = m_pBrickRow_9;
+	//Arrays:
+	Redbrick[0] = m_pBrickRow_1;
+	Redbrick[1] = m_pBrickRow_2;
+	Redbrick[2] = m_pBrickRow_3;
+	Redbrick[3] = m_pBrickRow_4;
+	Redbrick[4] = m_pBrickRow_5;
+	Redbrick[5] = m_pBrickRow_6;
+	Redbrick[6] = m_pBrickRow_7;
+	Redbrick[7] = m_pBrickRow_8;
+	Redbrick[8] = m_pBrickRow_9;
+
+	Orangebrick[0] = m_pBrickRow_1;
+	Orangebrick[1] = m_pBrickRow_2;
+	Orangebrick[2] = m_pBrickRow_3;
+	Orangebrick[3] = m_pBrickRow_4;
+	Orangebrick[4] = m_pBrickRow_5;
+	Orangebrick[5] = m_pBrickRow_6;
+	Orangebrick[6] = m_pBrickRow_7;
+	Orangebrick[7] = m_pBrickRow_8;
+	Orangebrick[8] = m_pBrickRow_9;
+
+	Greenbrick[0] = m_pBrickRow_1;
+	Greenbrick[1] = m_pBrickRow_2;
+	Greenbrick[2] = m_pBrickRow_3;
+	Greenbrick[3] = m_pBrickRow_4;
+	Greenbrick[4] = m_pBrickRow_5;
+	Greenbrick[5] = m_pBrickRow_6;
+	Greenbrick[6] = m_pBrickRow_7;
+	Greenbrick[7] = m_pBrickRow_8;
+	Greenbrick[8] = m_pBrickRow_9;
+
+	Yellowbrick[0] = m_pBrickRow_1;
+	Yellowbrick[1] = m_pBrickRow_2;
+	Yellowbrick[2] = m_pBrickRow_3;
+	Yellowbrick[3] = m_pBrickRow_4;
+	Yellowbrick[4] = m_pBrickRow_5;
+	Yellowbrick[5] = m_pBrickRow_6;
+	Yellowbrick[6] = m_pBrickRow_7;
+	Yellowbrick[7] = m_pBrickRow_8;
+	Yellowbrick[8] = m_pBrickRow_9;
 
 	m_pLevel = nullptr;
 	mLevelStarted = false;
@@ -180,51 +209,48 @@ void PlayScreen::Update() {
 	}
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
 			{
-				for (int i = 0; i < 8; i++) {
-					brick[0] = brick[i - 0];
-					brick[0]->Update(SDL_SCANCODE_P);
-					brick[1] = brick[i - 0];
-					brick[1]->Update(SDL_SCANCODE_P);
+				for (int i = 0; i < 9 - 1; i++) {
+					Redbrick[0]->Update(SDL_SCANCODE_P);
+					Redbrick[i] = Redbrick[i + 1];
 					
 				}
-
-				std::cout << "Pressed letter P " << std::endl;
 				m_pPlayer->RedBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
+				
 			}
 			
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
 			{
-				/*for (int i = 0; i < 9; i++) {
-					brick[0]->Update(SDL_SCANCODE_O);
-				}*/
-				std::cout << "Pressed letter O " << std::endl;
+				for (int i = 0; i < 9 - 1; i++) {
+					Orangebrick[0]->Update(SDL_SCANCODE_O);
+					Orangebrick[i] = Orangebrick[i + 1];
+
+				}
 				m_pPlayer->OrangeBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 			}
 			
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I))
 			{
-				/*for (int i = 0; i < 9; i++) {
-					brick[0]->Update(SDL_SCANCODE_I);
-					
-				}*/
-				std::cout << "Pressed letter I " << std::endl;
+				for (int i = 0; i < 9 - 1; i++) {
+					Greenbrick[0]->Update(SDL_SCANCODE_I);
+					Greenbrick[i] = Greenbrick[i + 1];
+
+				}
 				m_pPlayer->GreenBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 			}
 			
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U))
 			{
-				/*for (int i = 0; i < 9; i++) {
-					brick[0]->Update(SDL_SCANCODE_U);
-				}*/
-				std::cout << "Pressed letter U " << std::endl;
+				for (int i = 0; i < 9 - 1; i++) {
+					Yellowbrick[0]->Update(SDL_SCANCODE_U);
+					Yellowbrick[i] = Yellowbrick[i + 1];
+
+				}
 				m_pPlayer->YellowBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
-			}
-		
-			
+			}		
 }
 
 void PlayScreen::ResetAnimation() {

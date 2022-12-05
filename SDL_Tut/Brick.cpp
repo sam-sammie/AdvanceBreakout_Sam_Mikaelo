@@ -51,6 +51,18 @@ Brick::Brick()
 	m_pYellowBreakAnimation->Position(-235.0f, -405.0f);
 	m_pYellowBreakAnimation->SetWrapMode(AnimatedTexture::Once);
 
+	//Red Brick
+	AddCollider(new BoxCollider(Vector2(105.0f, 56.5f)), Vector2(-260.0f, -566.5f));
+	
+	//Orange Brick
+	AddCollider(new BoxCollider(Vector2(105.5f, 56.0f)), Vector2(-260.0f, -502.5f));
+	
+	//Green Brick
+	AddCollider(new BoxCollider(Vector2(105.9f, 56.0f)), Vector2(-260.0f, -437.5f));
+	
+	//YellowBrick
+	AddCollider(new BoxCollider(Vector2(105.9f, 56.0f)), Vector2(-260.0f, -373.0f));
+
 }
 
 Brick::~Brick()
@@ -113,6 +125,8 @@ void Brick::Render()
 	m_pOrangeBreakAnimation->Render();
 	m_pGreenBreakAnimation->Render();
 	m_pYellowBreakAnimation->Render();
+
+	PhysEntity::Render();
 }
 
 void Brick::Visible(bool visible) {

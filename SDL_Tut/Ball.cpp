@@ -11,6 +11,9 @@ Ball::Ball() {
 	mVisible = false;
 	mMoveSpeed = 300.0f;
 	mMoveBounds = Vector2(0.0f, 800.0f);
+
+	AddCollider(new BoxCollider(Vector2(15.0f, 15.0f)), Vector2(-7.0f, -7.0f));
+
 };
 
 Ball::~Ball() {
@@ -21,12 +24,18 @@ Ball::~Ball() {
 	m_pBall = nullptr;
 };
 
+void Ball::Hit(PhysEntity* other)
+{
+
+}
+
+
+
 void Ball::Movement() {
-	if (m_pInput->KeyDown(SDL_SCANCODE_SPACE)) {
-		Translate(-Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
+	if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
+		Translate(Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}
-	
-	/*else if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
+	else if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
 		Translate(-Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}
 	else if (m_pInput->KeyDown(SDL_SCANCODE_W)) {
@@ -34,7 +43,7 @@ void Ball::Movement() {
 	}
 	else if (m_pInput->KeyDown(SDL_SCANCODE_S)) {
 		Translate(Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
-	}*/
+	}
 
 
 	Vector2 pos = Position(Local);

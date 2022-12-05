@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "Ball.h"
 #include "Brick.h"
+#include "Texture.h"
 
 class Level : public GameEntity
 {
@@ -18,6 +19,7 @@ private:
 
 	Player* m_pPlayer;
 	Ball* m_pBall;
+	
 
 	void StartStage();
 
@@ -26,7 +28,7 @@ private:
 	bool GreenBrickDestroyed();
 	bool YellowBrickDestroyed();*/
 
-	bool mBallFell;
+	
 	float mRespawnDelay;
 	float mRespawnTimer;
 	float mRespawnLabelOnScreen;
@@ -48,9 +50,13 @@ public:
 	~Level();
 
 	LevelStates State();
+	bool mBallFell;
 
 	void Update() override;
 	void Render() override;
+
+protected:
+	
 };
 
 #endif // !_Level_h

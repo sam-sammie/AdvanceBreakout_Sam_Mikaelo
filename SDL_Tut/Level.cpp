@@ -95,13 +95,14 @@ void Level::HandleStartLabels() {
 
 void Level::HandleCollisions() {
 	if (!mBallFell) {
-		if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_X)) {
+		if (m_pBall->Position().y >= (Graphics::SCREEN_WIDTH * 0.9f) ) {
 			m_pPlayer->WasHit();
 			m_pSideBar->SetPlayerLives(m_pPlayer->Lives());
 
 			mBallFell = true;
 			mRespawnTimer = 0.0f;
 			m_pPlayer->Active(false);
+			m_pBall->Active(false);
 
 		}
 	}
@@ -123,6 +124,8 @@ void Level::HandlePlayerDeath() {
 			if (mRespawnTimer >= mRespawnDelay) {
 				m_pPlayer->Active(true);
 				m_pPlayer->Visible(true);
+				m_pBall->Active(true);
+				m_pBall->Position(500.0f,400.0f);
 				mBallFell = false;
 
 			}
@@ -142,3 +145,8 @@ void Level::HandlePlayerDeath() {
 	}
 }
 
+//void Ball::Movement() {
+//	if (Position().y >= (Graphics::SCREEN_WIDTH * 0.9f) - m_pBall->ScaledDimensions().x * 0.5f) { // Position().y is grabbing the ball  y position
+//		mBallFell = true;
+//	}
+//}

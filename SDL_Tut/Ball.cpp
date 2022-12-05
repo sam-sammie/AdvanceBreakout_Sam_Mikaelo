@@ -3,15 +3,25 @@
 Ball::Ball() {
 	m_pTimer = Timer::Instance();
 	m_pInput = InputManager::Instance();
+	m_pAudioManager = AudioManager::Instance();
 
 	m_pBall = new Texture("Ball.png", 0, 0, 20, 20);
 	m_pBall->Parent(this);
 	m_pBall->Position(Vec2_Zero);
-
+	
 	mVisible = false;
 
-	mMoveSpeed = 300.0f;
-	mMoveBounds = Vector2(0.0f, 800.0f);
+	mMoveSpeed = 900.0f;
+
+	DirectionY = 1;
+	DirectionX = -1;
+
+	AddCollider(new BoxCollider(Vector2(15.0f, 15.0f)), Vector2(-7.0f, -7.0f));
+
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Friendly);
+
+	Velocity = 350;
+
 };
 
 Ball::~Ball() {
@@ -20,10 +30,13 @@ Ball::~Ball() {
 
 	delete m_pBall;
 	m_pBall = nullptr;
+
+	
+	m_pAudioManager = nullptr;
 };
 
 void Ball::Movement() {
-	if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
+	/*if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
 		Translate(Vec2_Right * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}
 	else if (m_pInput->KeyDown(SDL_SCANCODE_A)) {
@@ -34,18 +47,40 @@ void Ball::Movement() {
 	}
 	else if (m_pInput->KeyDown(SDL_SCANCODE_S)) {
 		Translate(Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
-	}
+	}*/
 
 
-	Vector2 pos = Position(Local);
-	if (pos.x < mMoveBounds.x + m_pBall->ScaledDimensions().x * 0.5f) {
-		pos.x = mMoveBounds.x + m_pBall->ScaledDimensions().x * 0.5f;
-	}
-	else if (pos.x > mMoveBounds.y - m_pBall->ScaledDimensions().x * 0.5f) {
-		pos.x = mMoveBounds.y - m_pBall->ScaledDimensions().x * 0.5f;
+	if (Position().y <=(Graphics::SCREEN_WIDTH * 0.1f) - m_pBall->ScaledDimensions().x * 0.5f) { // Position().y is grabbing the ball  y position
+		DirectionY *= -1;
+		m_pAudioManager->PlaySFX("SFX/SwitchSelect.wav", 0, 0);
 	}
 
-	Position(pos);
+	if (Position().x >= Graphics::SCREEN_WIDTH - m_pBall->ScaledDimensions().x * 0.5f) {
+		DirectionX *= -1;
+		m_pAudioManager->PlaySFX("SFX/SwitchSelect.wav", 0, 0);
+	}
+
+	if (Position().x <=  m_pBall->ScaledDimensions().x * 0.5f) {
+		DirectionX *= -1;
+		m_pAudioManager->PlaySFX("SFX/SwitchSelect.wav", 0, 0);
+	}
+
+	if (Position().y >= (Graphics::SCREEN_WIDTH * 0.9f) - m_pBall->ScaledDimensions().x * 0.5f) { // Position().y is grabbing the ball  y position
+		
+	}
+
+	
+
+	
+	/*if (pos.y < mMoveBounds.x + m_pBall->ScaledDimensions().y * 0.5f) {
+		pos.y = mMoveBounds.x + m_pBall->ScaledDimensions().y * 0.5f;
+	}*/
+	/*else if (pos.y > mMoveBounds.y - m_pBall->ScaledDimensions().y * 0.5f) {
+		pos.y = mMoveBounds.y - m_pBall->ScaledDimensions().y * 0.5f;
+	}*/
+
+	
+	Translate(Vector2(Velocity * DirectionX, Velocity * DirectionY) * m_pTimer->DeltaTime(), World);
 }
 
 void Ball::Update() {
@@ -53,6 +88,7 @@ void Ball::Update() {
 	if (Active()) {
 	
 		Movement();
+
 	}
 	
 
@@ -61,6 +97,7 @@ void Ball::Update() {
 
 void Ball::Render() {
 	m_pBall->Render();
+	PhysEntity::Render();
 	if (mVisible) {
 		
 	}
@@ -68,4 +105,28 @@ void Ball::Render() {
 
 void Ball::Visible(bool visible) {
 	mVisible = visible;
+}
+
+void Ball::Hit(PhysEntity* other) { 
+	if (Position().x <= other->Position().x ) {
+		DirectionX *= -1;
+		m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
+	}
+	else if (Position().x >= other->Position().x) {
+		DirectionX *= -1;
+		m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
+	}
+
+	if (Position().y <= other->Position().y) {
+		DirectionY *= -1;
+		m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
+	}
+	else if (Position().y >= other->Position().y) {
+		DirectionY *= -1;
+		m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
+	}
+}
+
+bool Ball::IgnoreCollisions() {
+	return !Active();
 }

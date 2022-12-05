@@ -234,7 +234,7 @@ void PlayScreen::StartNewGame() {
 	delete m_pPlayer;
 	m_pPlayer = new Player();
 	m_pPlayer->Parent(this);
-	m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
+	m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.55f, Graphics::SCREEN_HEIGHT * 0.8f);
 	m_pPlayer->Active(false);
 
 	m_pSideBar->SetPlayerScore(m_pPlayer->Score());

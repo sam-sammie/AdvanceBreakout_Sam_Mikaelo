@@ -31,6 +31,12 @@
     <Filter Include="Source Files\Breakout">
       <UniqueIdentifier>{ec25ddba-9835-4f98-b79e-45f3c496c81d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{d3bb00ea-35f9-4e18-8b85-39dbdd2dd07c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{926f054c-bb79-4bd8-ad1f-deb464dae2be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -91,6 +97,21 @@
     <ClCompile Include="Brick.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Timer.h">
@@ -149,6 +170,24 @@
     </ClInclude>
     <ClInclude Include="Brick.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.h">
+      <Filter>Header Files\Physics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

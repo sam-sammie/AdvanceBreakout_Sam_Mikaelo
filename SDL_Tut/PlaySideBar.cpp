@@ -12,7 +12,7 @@ PlaySideBar::PlaySideBar()
 	m_pBackground->Scale(Vector2(3.0f, 10.0f));
 	m_pBackground->Position(50.0f, 0.0f);*/
 
-	/*m_pRightWall = new Texture("RightWall.png");
+	m_pRightWall = new Texture("RightWall.png");
 	m_pRightWall->Parent(this);
 	m_pRightWall->Scale(Vector2(3.0f, 10.0f));
 	m_pRightWall->Position(-250.0f, 0.0f);
@@ -25,7 +25,7 @@ PlaySideBar::PlaySideBar()
 	m_pTopWall = new Texture("TopWall.png");
 	m_pTopWall->Parent(this);
 	m_pTopWall->Scale(Vector2(500.0f, 10.0f));
-	m_pTopWall->Position(-850.0f, 0.0f);*/
+	m_pTopWall->Position(-850.0f, 0.0f);
 
 	m_pScoreLabel = new Texture("P1 SCORE:", "ARCADEPI.TTF", 32, { 150, 0, 0 });
 	m_pScoreLabel->Parent(this);
@@ -52,7 +52,7 @@ PlaySideBar::~PlaySideBar()
 	/*delete m_pBackground;
 	m_pBackground = nullptr;*/
 
-	/*delete m_pLeftWall;
+	delete m_pLeftWall;
 
 	m_pLeftWall = nullptr;
 
@@ -60,7 +60,7 @@ PlaySideBar::~PlaySideBar()
 	m_pRightWall = nullptr;
 
 	delete m_pTopWall;
-	m_pTopWall = nullptr;*/
+	m_pTopWall = nullptr;
 
 	delete m_pScoreLabel;
 	m_pScoreLabel = nullptr;
@@ -96,9 +96,9 @@ void PlaySideBar::SetLevel(int level) {
 void PlaySideBar::Update()
 {
 	//m_pBackground->Update();
-	/*m_pTopWall->Update();
+	m_pTopWall->Update();
 	m_pRightWall->Update();
-	m_pLeftWall->Update();*/
+	m_pLeftWall->Update();
 
 	m_pPlayerScoreboard->Update();
 	m_pScoreLabel->Update();
@@ -109,9 +109,9 @@ void PlaySideBar::Update()
 void PlaySideBar::Render()
 {
 	//m_pBackground->Render();
-	/*m_pTopWall->Render();
+	m_pTopWall->Render();
 	m_pRightWall->Render();
-	m_pLeftWall->Render();*/
+	m_pLeftWall->Render();
 	m_pLivesLabel->Render();
 	m_pPlayerScoreboard->Render();
 	m_pScoreLabel->Render();

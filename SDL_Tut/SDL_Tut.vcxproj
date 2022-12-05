@@ -151,6 +151,11 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp" />
     <ClCompile Include="AnimatedTexture.cpp" />
     <ClCompile Include="AssetManager.cpp" />
     <ClCompile Include="AudioManager.cpp" />
@@ -172,6 +177,12 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.h" />
     <ClInclude Include="AnimatedTexture.h" />
     <ClInclude Include="AssetManager.h" />
     <ClInclude Include="AudioManager.h" />

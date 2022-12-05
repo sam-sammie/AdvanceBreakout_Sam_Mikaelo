@@ -1,14 +1,9 @@
 ﻿  GameManager.cpp
-  main.cpp
+  Level.cpp
   PlayScreen.cpp
-  PlaySideBar.cpp
   ScreenManager.cpp
-  StartScreen.cpp
-C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.cpp(312,16): warning C4552: '-': result of expression not used
-  Texture.cpp
-  Timer.cpp
+  main.cpp
   Generating Code...
-  LINK : C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe not found or not built by the last incremental link; performing full link
   SDL_Tut.vcxproj -> C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libmodplug-1.dll
@@ -28,7 +23,10 @@ C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.c
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADEPI.TTF
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Ball.png
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Black.png
+  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BoxCollider.png
+  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BroadPhaseCollider.png
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BulletBall.png
+  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\CircleCollider.png
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Cursor.png
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\emulogic.ttf
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\GreenBrick.png
@@ -59,4 +57,4 @@ C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.c
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\PaddleBounce.wav
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\SwitchSelect.wav
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\WallBounce.wav
-  35 File(s) copied
+  38 File(s) copied

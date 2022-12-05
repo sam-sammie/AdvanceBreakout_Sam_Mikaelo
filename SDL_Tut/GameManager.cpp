@@ -32,8 +32,6 @@ namespace SDLFramework {
 			LateUpdate();
 			Render();
 			}
-
-			
 		}
 	}
 
@@ -41,19 +39,16 @@ namespace SDLFramework {
 	{
 		m_pInputManager->Update();
 		m_pScreenManager->Update();
-
 	}
 
 	void GameManager::LateUpdate() {
 		m_pInputManager->UpdatePrevInput();
+		m_pPhysicsManager->Update();
 	}
 
 	void GameManager::Render() {
-		m_pGraphics->ClearBackBuffer(); // call this oen first
-		// The order we render matters
-		//We render on top of each one.
-		m_pScreenManager->Render();
-		
+		m_pGraphics->ClearBackBuffer(); // call this oen first// The order we render matters//We render on top of each one.
+		m_pScreenManager->Render();	
 		m_pGraphics->Render(); // call this one last
 	}
 
@@ -63,11 +58,31 @@ namespace SDLFramework {
 		if (!Graphics::Initialized()) {
 			mQuit = true;
 		}
+
 		m_pAssetManager = AssetManager::Instance();
 		m_pInputManager = InputManager::Instance();
 		m_pAudioManager = AudioManager::Instance();
-
 		m_pScreenManager = ScreenManager::Instance();
+		m_pPhysicsManager = PhysicsManager::Instance();
+
+		m_pPhysicsManager->SetLayerCollisionMask(
+			PhysicsManager::CollisionLayers::Friendly,
+			PhysicsManager::CollisionFlags::Hostile |
+			PhysicsManager::CollisionFlags::HostileProjectiles);
+
+		m_pPhysicsManager->SetLayerCollisionMask(
+			PhysicsManager::CollisionLayers::FriendlyProjectiles,
+			PhysicsManager::CollisionFlags::Hostile);
+
+		m_pPhysicsManager->SetLayerCollisionMask(
+			PhysicsManager::CollisionLayers::Hostile,
+			PhysicsManager::CollisionFlags::Friendly |
+			PhysicsManager::CollisionFlags::FriendlyProjectiles);
+
+		m_pPhysicsManager->SetLayerCollisionMask(
+			PhysicsManager::CollisionLayers::HostileProjectiles,
+			PhysicsManager::CollisionFlags::Friendly);
+
 	}
 
 	GameManager::~GameManager() {
@@ -75,14 +90,21 @@ namespace SDLFramework {
 		Timer::Release();
 		m_pGraphics = nullptr;
 		m_pTimer = nullptr;
+
 		AssetManager::Release();
 		m_pAssetManager = nullptr;
+
 		InputManager::Release();
 		m_pInputManager = nullptr;
+
 		AudioManager::Release();
 		m_pAudioManager = nullptr;
+
 		ScreenManager::Release();
 		m_pScreenManager = nullptr;
+
+		PhysicsManager::Release();
+		m_pPhysicsManager = nullptr;
 
 		SDL_Quit();
 	}

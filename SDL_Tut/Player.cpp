@@ -1,5 +1,6 @@
 #include "Player.h"
 
+//Ball* Player::m_pBall = nullptr;
 Player::Player() {
 	m_pTimer = Timer::Instance();
 	m_pInput = InputManager::Instance();
@@ -15,13 +16,19 @@ Player::Player() {
 	m_pPaddle->Parent(this);
 	m_pPaddle->Position(Vec2_Zero);
 
-	mMoveSpeed = 100.0f;
-	mMoveBounds = Vector2(0.0f, 800.0f);
+	mMoveSpeed = 600.0f;
+	mMoveBounds = Vector2(-100.0f, 1150.0f);
 
 	m_pDeathAnimation = new AnimatedTexture("PlayerExplosion.png", 0, 0, 128, 128, 4, 1.0f, AnimatedTexture::Horizontal);
 	m_pDeathAnimation->Parent(this);
 	m_pDeathAnimation->Position(Vec2_Zero);
 	m_pDeathAnimation->SetWrapMode(AnimatedTexture::Once);
+
+	AddCollider(new BoxCollider(Vector2(110.0f, 12.0f)), Vector2(-50.0f, 60.0f));
+
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
+
+	
 }
 
 Player::~Player() {
@@ -35,7 +42,13 @@ Player::~Player() {
 	delete m_pPaddle;
 	m_pPaddle = nullptr;
 
+	
+
 }
+
+//bool Player::IgnoreCollisions() {
+//	return !mVisible || mAnimating;
+//}
 
 void Player::Visible(bool visible) {
 	mVisible = visible;
@@ -104,8 +117,10 @@ void Player::Render() {
 		}
 		else {
 			m_pPaddle->Render();
+			
 		}
 	}
+	PhysEntity::Render();
 }
 
 void Player::RedBrickDestroyed() {
@@ -126,4 +141,8 @@ void Player::GreenBrickDestroyed() {
 void Player::YellowBrickDestroyed() {
 	mScore += 100;
 	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, -1);
+}
+
+void Player::Hit(PhysEntity* other) {
+	//Player::Hit(other);
 }

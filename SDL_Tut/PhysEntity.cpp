@@ -58,7 +58,9 @@ bool PhysEntity::CheckCollision(PhysEntity* other)
 		return false;
 	}
 
-	/*if (m_pBroadPhaseCollider && other->m_pBroadPhaseCollider) {
+
+	if (m_pBroadPhaseCollider && other->m_pBroadPhaseCollider) {
+
 		narrowPhaseCheck =
 			ColliderVsColliderCheck(m_pBroadPhaseCollider, other->m_pBroadPhaseCollider);
 	}
@@ -75,10 +77,12 @@ bool PhysEntity::CheckCollision(PhysEntity* other)
 			}
 		}
 	}
-	return false;*/
+
+	return false;
 
 
-	return ColliderVsColliderCheck(m_pBroadPhaseCollider, other->m_pBroadPhaseCollider);
+	//return ColliderVsColliderCheck(m_pBroadPhaseCollider, other->m_pBroadPhaseCollider);
+
 }
 
 void PhysEntity::Render() {
@@ -90,3 +94,4 @@ void PhysEntity::Render() {
 		m_pBroadPhaseCollider->Render();
 	}
 }
+

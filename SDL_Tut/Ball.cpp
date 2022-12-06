@@ -11,6 +11,7 @@ Ball::Ball() {
 	
 	mVisible = false;
 
+
 	mMoveSpeed = 900.0f;
 
 	DirectionY = 1;
@@ -21,6 +22,7 @@ Ball::Ball() {
 	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Friendly);
 
 	Velocity = 350;
+
 
 };
 
@@ -34,6 +36,13 @@ Ball::~Ball() {
 	
 	m_pAudioManager = nullptr;
 };
+
+void Ball::Hit(PhysEntity* other)
+{
+
+}
+
+
 
 void Ball::Movement() {
 	/*if (m_pInput->KeyDown(SDL_SCANCODE_D)) {
@@ -54,6 +63,7 @@ void Ball::Movement() {
 		DirectionY *= -1;
 		m_pAudioManager->PlaySFX("SFX/SwitchSelect.wav", 0, 0);
 	}
+
 
 	if (Position().x >= Graphics::SCREEN_WIDTH - m_pBall->ScaledDimensions().x * 0.5f) {
 		DirectionX *= -1;
@@ -81,6 +91,7 @@ void Ball::Movement() {
 
 	
 	Translate(Vector2(Velocity * DirectionX, Velocity * DirectionY) * m_pTimer->DeltaTime(), World);
+
 }
 
 void Ball::Update() {
@@ -130,3 +141,4 @@ void Ball::Hit(PhysEntity* other) {
 bool Ball::IgnoreCollisions() {
 	return !Active();
 }
+

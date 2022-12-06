@@ -9,14 +9,14 @@
 #include "Player.h"
 #include "Brick.h"
 #include "Ball.h"
-
-class PlayScreen : public GameEntity
+#include "StartScreen.h"
+#include "PhysEntity.h"
+class PlayScreen : public PhysEntity
 {
 private:
 	Timer* m_pTimer;
 	AudioManager* m_pAudio;
 	PlaySideBar* m_pSideBar;
-
 
 	Brick* m_pBrickRow_1;
 	Brick* m_pBrickRow_2;
@@ -28,8 +28,11 @@ private:
 	Brick* m_pBrickRow_8;
 	Brick* m_pBrickRow_9;
 
-	/*AnimatedTexture* m_pPaddle;
-	Texture* m_pAnimatedPaddle;*/
+	//Arrays
+	Brick* Redbrick[9];
+	Brick* Orangebrick[9];
+	Brick* Greenbrick[9];
+	Brick* Yellowbrick[9];
 
 	//Animation Varibles
 	Vector2 mAnimationStartPos;
@@ -56,7 +59,6 @@ public:
 	void StartNextLevel();
 
 	bool GameOver();
-
 
 	void Update() override;
 	void Render() override;

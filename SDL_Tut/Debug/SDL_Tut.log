@@ -1,3 +1,4 @@
+
 ﻿  GameManager.cpp
   Level.cpp
   PlayScreen.cpp
@@ -58,3 +59,51 @@
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\SwitchSelect.wav
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\WallBounce.wav
   38 File(s) copied
+
+﻿  Ball.cpp
+  GameManager.cpp
+  Level.cpp
+  PlayScreen.cpp
+  Player.cpp
+  ScreenManager.cpp
+  main.cpp
+  Generating Code...
+  SDL_Tut.vcxproj -> D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
+  The system cannot find the path specified.
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADE.TTF
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADEPI.TTF
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Ball.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Black.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BulletBall.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Cursor.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\emulogic.ttf
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\GreenBrick.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\LeftWall.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\namco__.ttf
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\OrangeBrick.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Paddle.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\PlayerExplosion.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\PlayerShips.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\RedBrick.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\RightWall.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test1.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test11.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test12.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test2.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test3.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test5.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test6.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test8.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test9.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\TopWall.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Bricks\Brick Destroy Animation.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Bricks\Yellow Brick.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\coin_credit.wav
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\EnterSelect.wav
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\Hitmarker.wav
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\Oof.wav
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\PaddleBounce.wav
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\SwitchSelect.wav
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\WallBounce.wav
+  35 File(s) copied
+

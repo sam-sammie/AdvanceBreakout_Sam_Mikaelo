@@ -7,10 +7,10 @@ PlaySideBar::PlaySideBar()
 
 	//Layout
 
-	/*m_pBackground = new Texture("Black.png");
+	m_pBackground = new Texture("Black.png");
 	m_pBackground->Parent(this);
 	m_pBackground->Scale(Vector2(3.0f, 10.0f));
-	m_pBackground->Position(50.0f, 0.0f);*/
+	m_pBackground->Position(50.0f, 0.0f);
 
 	m_pRightWall = new Texture("RightWall.png");
 	m_pRightWall->Parent(this);
@@ -49,8 +49,8 @@ PlaySideBar::~PlaySideBar()
 	m_pTimer = nullptr;
 	m_pAudio = nullptr;
 
-	/*delete m_pBackground;
-	m_pBackground = nullptr;*/
+	delete m_pBackground;
+	m_pBackground = nullptr;
 
 	delete m_pLeftWall;
 
@@ -95,7 +95,8 @@ void PlaySideBar::SetLevel(int level) {
 
 void PlaySideBar::Update()
 {
-	//m_pBackground->Update();
+
+	m_pBackground->Update();
 	m_pTopWall->Update();
 	m_pRightWall->Update();
 	m_pLeftWall->Update();
@@ -108,7 +109,9 @@ void PlaySideBar::Update()
 
 void PlaySideBar::Render()
 {
-	//m_pBackground->Render();
+
+	m_pBackground->Render();
+
 	m_pTopWall->Render();
 	m_pRightWall->Render();
 	m_pLeftWall->Render();

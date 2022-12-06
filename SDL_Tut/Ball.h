@@ -3,13 +3,16 @@
 #include "Timer.h"
 #include "InputManager.h"
 #include "AnimatedTexture.h"
-#include "PhysEntity.h" 
+#include "PhysEntity.h"
 #include "BoxCollider.h"
 #include "CircleCollider.h"
 #include "PhysicsManager.h"
 #include "Player.h"
 #include "AudioManager.h"
 
+
+
+#include "PhysEntity.h"
 
 
 using namespace SDLFramework;
@@ -44,11 +47,16 @@ public:
 
 	void Visible(bool visible);
 
+	void Hit(PhysEntity* other) override;
+
 	void Update() override;
 	void Render() override;
 
 	bool IgnoreCollisions() override;
 	void Hit(PhysEntity* other) override;
+
+
+	void Draw(SDL_Renderer* renderer);
 
 };
 

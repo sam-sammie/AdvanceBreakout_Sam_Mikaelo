@@ -54,6 +54,7 @@ namespace SDLFramework {
 
 	GameManager::GameManager() : mQuit(false) {
 		m_pGraphics = Graphics::Instance();
+		m_pPhysicsManager = PhysicsManager::Instance();
 		m_pTimer = Timer::Instance();
 		if (!Graphics::Initialized()) {
 			mQuit = true;
@@ -64,6 +65,7 @@ namespace SDLFramework {
 		m_pAudioManager = AudioManager::Instance();
 		m_pScreenManager = ScreenManager::Instance();
 		m_pPhysicsManager = PhysicsManager::Instance();
+
 
 		m_pPhysicsManager->SetLayerCollisionMask(
 			PhysicsManager::CollisionLayers::Friendly,
@@ -88,6 +90,8 @@ namespace SDLFramework {
 	GameManager::~GameManager() {
 		Graphics::Release();
 		Timer::Release();
+		PhysicsManager::Release();
+		m_pPhysicsManager = nullptr;
 		m_pGraphics = nullptr;
 		m_pTimer = nullptr;
 

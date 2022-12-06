@@ -104,5 +104,13 @@ namespace SDLFramework {
 		}
 		return value;
 	}
+
+	inline float PointToLineDistance(const Vector2& lineStart, const Vector2& lineEnd, const Vector2& point) {
+		Vector2 slope = lineEnd - lineStart;
+		float param = Clamp(Dot(point - lineStart, slope) / slope.MagnitudeSqr(), 0.0f, 1.0f);
+		Vector2 nearestPoint = lineStart + slope * param;
+
+		return (point - nearestPoint).Magnitude();
+	}
 }
 #endif // !_MATHHELPER_H

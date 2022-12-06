@@ -5,6 +5,7 @@
 #include "Scoreboard.h"
 #include "BackGroundStars.h"
 #include "AudioManager.h"
+#include "PlaySideBar.h"
 
 using namespace SDLFramework;
 

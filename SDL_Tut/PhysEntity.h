@@ -33,4 +33,6 @@ public:
 
 	virtual void Render() override;
 };
+
 #endif
+

@@ -53,9 +53,8 @@ void Ball::Movement() {
 	else if (m_pInput->KeyDown(SDL_SCANCODE_S)) {
 		Translate(Vec2_Up * mMoveSpeed * m_pTimer->DeltaTime(), World);
 	}*/
-
-
-	if (Position().y <=(Graphics::SCREEN_WIDTH * 0.1f) - m_pBall->ScaledDimensions().x * 0.5f) { // Position().y is grabbing the ball  y position
+	
+	if (Position().y <= (Graphics::SCREEN_WIDTH * 0.1f) - m_pBall->ScaledDimensions().x * 0.5f) { // Position().y is grabbing the ball  y position
 		DirectionY *= -1;
 		m_pAudioManager->PlaySFX("SFX/SwitchSelect.wav", 0, 0);
 	}
@@ -66,16 +65,16 @@ void Ball::Movement() {
 		m_pAudioManager->PlaySFX("SFX/SwitchSelect.wav", 0, 0);
 	}
 
-	if (Position().x <=  m_pBall->ScaledDimensions().x * 0.5f) {
+	if (Position().x <= m_pBall->ScaledDimensions().x * 0.5f) {
 		DirectionX *= -1;
 		m_pAudioManager->PlaySFX("SFX/SwitchSelect.wav", 0, 0);
 	}
 
 	if (Position().y >= (Graphics::SCREEN_WIDTH * 0.9f) - m_pBall->ScaledDimensions().x * 0.5f) { // Position().y is grabbing the ball  y position
-		
+
 	}
 
-	
+	Translate(Vector2(Velocity * DirectionX, Velocity * DirectionY) * m_pTimer->DeltaTime(), World);
 
 	
 	/*if (pos.y < mMoveBounds.x + m_pBall->ScaledDimensions().y * 0.5f) {
@@ -86,20 +85,18 @@ void Ball::Movement() {
 	}*/
 
 	
-	Translate(Vector2(Velocity * DirectionX, Velocity * DirectionY) * m_pTimer->DeltaTime(), World);
+	
 
 }
 
-void Ball::Update() {
-	m_pBall->Update();
-	if (Active()) {
-	
-		Movement();
+void Ball::Update() 
+{
+		m_pBall->Update();
+		if (Active()) {
 
-	}
-	
+			Movement();
 
-
+		}
 }
 
 void Ball::Render() {

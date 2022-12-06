@@ -76,12 +76,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Miko\Desktop\SDL2-2.24.2\include;C:\Users\Miko\Desktop\SDL2_image-2.0.4\include;C:\Users\Miko\Desktop\SDL2_ttf-2.20.1\include;C:\Users\Miko\Desktop\SDL2_mixer-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Origins\SDL2_image-devel-2.0.4-VC\SDL2_image-2.0.4\include;D:\Origins\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\include;D:\Origins\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\include;D:\Origins\SDL2-devel-2.24.2-VC\SDL2-2.24.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Miko\Desktop\SDL2_image-2.0.4\lib\x86;C:\Users\Miko\Desktop\SDL2-2.24.2\lib\x86;C:\Users\Miko\Desktop\SDL2_ttf-2.20.1\lib\x86;C:\Users\Miko\Desktop\SDL2_mixer-2.6.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Origins\SDL2_image-devel-2.0.4-VC\SDL2_image-2.0.4\lib\x86;D:\Origins\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\lib\x86;D:\Origins\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\lib\x86;D:\Origins\SDL2-devel-2.24.2-VC\SDL2-2.24.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;Shell32.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
@@ -97,14 +97,14 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Miko\Desktop\SDL2-2.24.2\include;C:\Users\Miko\Desktop\SDL2_image-2.0.4\include;C:\Users\Miko\Desktop\SDL2_ttf-2.20.1\include;C:\Users\Miko\Desktop\SDL2_mixer-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Origins\SDL2_image-devel-2.0.4-VC\SDL2_image-2.0.4\include;D:\Origins\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\include;D:\Origins\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\include;D:\Origins\SDL2-devel-2.24.2-VC\SDL2-2.24.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Miko\Desktop\SDL2_image-2.0.4\lib\x86;C:\Users\Miko\Desktop\SDL2-2.24.2\lib\x86;C:\Users\Miko\Desktop\SDL2_ttf-2.20.1\lib\x86;C:\Users\Miko\Desktop\SDL2_mixer-2.6.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Origins\SDL2_image-devel-2.0.4-VC\SDL2_image-2.0.4\lib\x86;D:\Origins\SDL2_mixer-devel-2.6.2-VC\SDL2_mixer-2.6.2\lib\x86;D:\Origins\SDL2_ttf-devel-2.20.1-VC\SDL2_ttf-2.20.1\lib\x86;D:\Origins\SDL2-devel-2.24.2-VC\SDL2-2.24.2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;Shell32.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
@@ -151,11 +151,6 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp" />
     <ClCompile Include="AnimatedTexture.cpp" />
     <ClCompile Include="AssetManager.cpp" />
     <ClCompile Include="AudioManager.cpp" />
@@ -182,12 +177,6 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.h" />
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.h" />
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.h" />
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.h" />
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h" />
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.h" />
     <ClInclude Include="..\..\..\Visual Studio 2022\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h" />
     <ClInclude Include="AnimatedTexture.h" />
     <ClInclude Include="AssetManager.h" />

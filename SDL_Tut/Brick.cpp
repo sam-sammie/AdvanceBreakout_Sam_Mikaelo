@@ -1,5 +1,10 @@
 #include "Brick.h"
 
+bool Brick::IgnoreCollisions()
+{
+	return false;
+}
+
 Brick::Brick()
 {
 	m_pTimer = Timer::Instance();
@@ -8,24 +13,6 @@ Brick::Brick()
 	
 	mVisible = false;
 	mAnimating = false;
-
-	m_pRedBrickTexture = new Texture("Bricks/Red Destroy.png", 0, 0, 67, 100);
-	m_pRedBrickTexture->Parent(this);
-	m_pRedBrickTexture->Position(Vec2_Zero);
-
-	m_pOrangeBrickTexture = new Texture("Bricks/Orange Destroy.png", 0, 0, 67, 100);
-	m_pOrangeBrickTexture->Parent(this);
-	m_pOrangeBrickTexture->Position(Vec2_Zero);
-
-	m_pGreenBrickTexture = new Texture("Bricks/Green Destroy.png", 0, 0, 67, 100);
-	m_pGreenBrickTexture->Parent(this);
-	m_pGreenBrickTexture->Position(Vec2_Zero);
-
-	m_pYellowBrickTexture = new Texture("Bricks/Yellow Destroy.png", 0, 0, 67, 100);
-	m_pYellowBrickTexture->Parent(this);
-	m_pYellowBrickTexture->Position(Vec2_Zero);
-
-	
 
 	m_pRedBreakAnimation = new AnimatedTexture("Bricks/Red Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pRedBreakAnimation->Parent(this);
@@ -50,18 +37,23 @@ Brick::Brick()
 	m_pYellowBreakAnimation->Scale(Vector2(2.0f, 2.0f));
 	m_pYellowBreakAnimation->Position(-235.0f, -405.0f);
 	m_pYellowBreakAnimation->SetWrapMode(AnimatedTexture::Once);
-
+	
 	//Red Brick
 	AddCollider(new BoxCollider(Vector2(105.0f, 56.5f)), Vector2(-260.0f, -566.5f));
-	
-	//Orange Brick
+
+	////Orange Brick
 	AddCollider(new BoxCollider(Vector2(105.5f, 56.0f)), Vector2(-260.0f, -502.5f));
-	
-	//Green Brick
+
+	////Green Brick
 	AddCollider(new BoxCollider(Vector2(105.9f, 56.0f)), Vector2(-260.0f, -437.5f));
-	
-	//YellowBrick
+
+	////YellowBrick
 	AddCollider(new BoxCollider(Vector2(105.9f, 56.0f)), Vector2(-260.0f, -373.0f));
+
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
+
+
+
 
 }
 
@@ -83,40 +75,28 @@ Brick::~Brick()
 	delete m_pYellowBreakAnimation;
 	m_pYellowBreakAnimation = nullptr;
 
-	delete m_pYellowBrickTexture;
-	m_pYellowBrickTexture = nullptr;
-	
-	delete m_pRedBrickTexture;
-	m_pYellowBrickTexture = nullptr;
-	
-	delete m_pGreenBrickTexture;
-	m_pYellowBrickTexture = nullptr;
-	
-	delete m_pOrangeBrickTexture;
-	m_pYellowBrickTexture = nullptr;
-
-
 }
 
-void Brick::Update(int keypress)
+void Brick::Update()
 {
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) {
-		
-		m_pRedBreakAnimation->Update();
-
+	m_pRedBreakAnimation->Update();
+	m_pOrangeBreakAnimation->Update();
+	m_pGreenBreakAnimation->Update();
+	m_pYellowBreakAnimation->Update();
+	/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) {
 	}
 	else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
 	{
-		m_pOrangeBreakAnimation->Update();
+		
 	}
 	else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I)) 
 	{
-		m_pGreenBreakAnimation->Update();
+		
 	}
 	else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U)) 
 	{
-		m_pYellowBreakAnimation->Update();
-	}
+		
+	}*/
 }
 
 void Brick::Render()
@@ -137,12 +117,12 @@ bool Brick::IsAnimating() {
 	return mAnimating;
 }
 
-bool Brick::InDeathAnimation()
-{
-	return m_pRedBreakAnimation->IsAnimating();
-	return m_pOrangeBreakAnimation->IsAnimating();
-	return m_pGreenBreakAnimation->IsAnimating();
-	return m_pYellowBreakAnimation->IsAnimating();
-}
+//bool Brick::InDeathAnimation()
+//{
+//	return m_pRedBreakAnimation->IsAnimating();
+//	return m_pOrangeBreakAnimation->IsAnimating();
+//	return m_pGreenBreakAnimation->IsAnimating();
+//	return m_pYellowBreakAnimation->IsAnimating();
+//}
 
 

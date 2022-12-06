@@ -159,7 +159,6 @@ void PlayScreen::Render() {
 			m_pLevel->Render();
 		}
 		m_pPlayer->Render();
-	
 		m_pBrickRow_1->Render();
 		m_pBrickRow_2->Render();
 		m_pBrickRow_3->Render();
@@ -210,7 +209,7 @@ void PlayScreen::Update() {
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
 			{
 				for (int i = 0; i < 9 - 1; i++) {
-					Redbrick[0]->Update(SDL_SCANCODE_P);
+					Redbrick[0]->Update();
 					Redbrick[i] = Redbrick[i + 1];
 					
 				}
@@ -222,7 +221,7 @@ void PlayScreen::Update() {
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
 			{
 				for (int i = 0; i < 9 - 1; i++) {
-					Orangebrick[0]->Update(SDL_SCANCODE_O);
+					Orangebrick[0]->Update();
 					Orangebrick[i] = Orangebrick[i + 1];
 
 				}
@@ -233,7 +232,7 @@ void PlayScreen::Update() {
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I))
 			{
 				for (int i = 0; i < 9 - 1; i++) {
-					Greenbrick[0]->Update(SDL_SCANCODE_I);
+					Greenbrick[0]->Update();
 					Greenbrick[i] = Greenbrick[i + 1];
 
 				}
@@ -244,7 +243,7 @@ void PlayScreen::Update() {
 			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U))
 			{
 				for (int i = 0; i < 9 - 1; i++) {
-					Yellowbrick[0]->Update(SDL_SCANCODE_U);
+					Yellowbrick[0]->Update();
 					Yellowbrick[i] = Yellowbrick[i + 1];
 
 				}

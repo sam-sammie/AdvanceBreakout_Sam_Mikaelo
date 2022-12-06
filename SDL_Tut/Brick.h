@@ -4,6 +4,7 @@
 #include "InputManager.h"
 #include "AudioManager.h"
 #include "PhysEntity.h"
+#include "PhysicsManager.h"
 
 using namespace SDLFramework;
 
@@ -30,17 +31,21 @@ private:
 	bool mVisible;
 	bool mAnimating;
 
+protected:
+	bool IgnoreCollisions() override;
+
 public:
 	Brick();
 	~Brick();
 	
+	void WasHit();
 
 	void Visible(bool visible);
 	bool IsAnimating();
 	bool InDeathAnimation();
 
 
-	void Update(int keypress);
+	void Update();
 	void Render();
 
 };

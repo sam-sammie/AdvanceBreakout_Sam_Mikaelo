@@ -1,230 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Header Files\Entities">
-      <UniqueIdentifier>{53e752d4-77c0-42ae-8f53-d877dd2e603f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Entities">
-      <UniqueIdentifier>{f8284c8c-f130-4590-a11b-1cb795cd0ab2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Managers">
-      <UniqueIdentifier>{9354a2e9-c512-4330-a2f5-7509733da0c7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Managers">
-      <UniqueIdentifier>{51ce6371-482c-4d1f-a021-c0760b7ec4d6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Breakout">
-      <UniqueIdentifier>{582f1e57-2ddb-4229-8b03-e8edf7f724a6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Breakout">
-      <UniqueIdentifier>{ec25ddba-9835-4f98-b79e-45f3c496c81d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Physics">
-      <UniqueIdentifier>{d3bb00ea-35f9-4e18-8b85-39dbdd2dd07c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Physics">
-      <UniqueIdentifier>{926f054c-bb79-4bd8-ad1f-deb464dae2be}</UniqueIdentifier>
-    <Filter Include="Header Files\Managers\Physics">
-      <UniqueIdentifier>{5c1fc3a3-f93e-431f-9dfb-e5df57c7248e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Physics">
-      <UniqueIdentifier>{33994940-f462-4287-8837-44c9764d947e}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp" />
+    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp" />
+    <ClCompile Include="AnimatedTexture.cpp" />
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="BoxCollider.cpp" />
+    <ClCompile Include="Brick.cpp" />
+    <ClCompile Include="CircleCollider.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="GameEntity.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PhysEntity.cpp" />
+    <ClCompile Include="PhysicsManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayScreen.cpp" />
+    <ClCompile Include="PlaySideBar.cpp" />
+    <ClCompile Include="Scoreboard.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="StartScreen.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Timer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GameEntity.cpp">
-      <Filter>Source Files\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AnimatedTexture.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StartScreen.cpp">
-      <Filter>Source Files\Breakout</Filter>
-    </ClCompile>
-    <ClCompile Include="Scoreboard.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="AssetManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="AudioManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="GameManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="ScreenManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayScreen.cpp">
-      <Filter>Source Files\Breakout</Filter>
-    </ClCompile>
-    <ClCompile Include="PlaySideBar.cpp">
-      <Filter>Source Files\Breakout</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files\Breakout</Filter>
-    </ClCompile>
-    <ClCompile Include="Level.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ball.cpp">
-      <Filter>Source Files</Filter>
-      <Filter>Source Files\Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="Brick.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="BoxCollider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="Collider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="PhysicsManager.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="PhysEntity.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="CircleCollider.cpp">
-      <Filter>Source Files\Physics</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Source Files\Entities</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Timer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MathHelper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GameEntity.h">
-      <Filter>Header Files\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AnimatedTexture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StartScreen.h">
-      <Filter>Header Files\Breakout</Filter>
-    </ClInclude>
-    <ClInclude Include="Scoreboard.h">
-      <Filter>Header Files\Breakout</Filter>
-    </ClInclude>
-    <ClInclude Include="GameManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="AudioManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="InputManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="AssetManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphics.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="ScreenManager.h">
-      <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayScreen.h">
-      <Filter>Header Files\Breakout</Filter>
-    </ClInclude>
-    <ClInclude Include="PlaySideBar.h">
-      <Filter>Header Files\Breakout</Filter>
-    </ClInclude>
-    <ClInclude Include="Level.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Ball.h">
-      <Filter>Header Files\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="Brick.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h">
-      <Filter>Header Files\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.h">
-      <Filter>Header Files\Physics</Filter>
-    <ClInclude Include="BoxCollider.h">
-      <Filter>Header Files\Managers\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Visual Studio 2022\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h">
-      <Filter>Header Files\Managers\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="Collider.h">
-      <Filter>Header Files\Managers\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="PhysicsManager.h">
-      <Filter>Header Files\Managers\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="PhysEntity.h">
-      <Filter>Header Files\Managers\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="CircleCollider.h">
-      <Filter>Header Files\Managers\Physics</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Header Files\Entities</Filter>
-    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h" />
+    <ClInclude Include="..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.h" />
+    <ClInclude Include="..\..\..\Visual Studio 2022\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h" />
+    <ClInclude Include="AnimatedTexture.h" />
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="BoxCollider.h" />
+    <ClInclude Include="Brick.h" />
+    <ClInclude Include="CircleCollider.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="GameEntity.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="MathHelper.h" />
+    <ClInclude Include="PhysEntity.h" />
+    <ClInclude Include="PhysicsManager.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayScreen.h" />
+    <ClInclude Include="PlaySideBar.h" />
+    <ClInclude Include="Scoreboard.h" />
+    <ClInclude Include="ScreenManager.h" />
+    <ClInclude Include="StartScreen.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
 </Project>

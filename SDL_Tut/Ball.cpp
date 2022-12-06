@@ -37,10 +37,6 @@ Ball::~Ball() {
 	m_pAudioManager = nullptr;
 };
 
-void Ball::Hit(PhysEntity* other)
-{
-
-}
 
 
 

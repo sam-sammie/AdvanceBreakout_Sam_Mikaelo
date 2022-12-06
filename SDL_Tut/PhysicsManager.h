@@ -15,13 +15,13 @@ public:
 
 	enum class CollisionFlags {
 
-		None				= 0x00,
-		Friendly			= 0x01,
+		None = 0x00,
+		Friendly = 0x01,
 		FriendlyProjectiles = 0x02,
-		Hostile				= 0x04,
-		HostileProjectiles	= 0x08
+		Hostile = 0x04,
+		HostileProjectiles = 0x08
 
-
+	};
 private:
 	static PhysicsManager* s_pInstance;
 
@@ -50,9 +50,6 @@ inline PhysicsManager::CollisionFlags operator|(PhysicsManager::CollisionFlags a
 	return static_cast<PhysicsManager::CollisionFlags>(static_cast<unsigned int>(a) | static_cast<unsigned int>(b));
 }
 
-inline PhysicsManager::CollisionFlags operator&(PhysicsManager::CollisionFlags a, PhysicsManager::CollisionFlags b) {
-	return static_cast<PhysicsManager::CollisionFlags>(static_cast<unsigned int>(a) & static_cast<unsigned int>(b));
-}
 
 #endif
 

@@ -53,7 +53,7 @@ public:
 	void Render() override;
 
 	bool IgnoreCollisions() override;
-	void Hit(PhysEntity* other) override;
+
 
 
 	void Draw(SDL_Renderer* renderer);

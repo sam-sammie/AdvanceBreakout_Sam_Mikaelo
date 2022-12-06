@@ -1,10 +1,56 @@
-
-﻿  GameManager.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1118,5): warning MSB8027: Two or more files with the name of BoxCollider.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\BoxCollider.cpp, BoxCollider.cpp.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1118,5): warning MSB8027: Two or more files with the name of CircleCollider.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\CircleCollider.cpp, CircleCollider.cpp.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1118,5): warning MSB8027: Two or more files with the name of Collider.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\Collider.cpp, Collider.cpp.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1118,5): warning MSB8027: Two or more files with the name of PhysEntity.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp, PhysEntity.cpp.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1118,5): warning MSB8027: Two or more files with the name of PhysicsManager.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\..\..\..\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp, PhysicsManager.cpp.
+  BoxCollider.cpp
+  CircleCollider.cpp
+  Collider.cpp
+  PhysEntity.cpp
+C:\Users\Miko\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp(14,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Miko\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp(70,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Miko\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysEntity.cpp(71,22): warning C4018: '<': signed/unsigned mismatch
+  PhysicsManager.cpp
+C:\Users\Miko\Desktop\VS_Studios\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsManager.cpp(32,21): warning C4018: '<': signed/unsigned mismatch
+  AnimatedTexture.cpp
+  AssetManager.cpp
+  AudioManager.cpp
+  Ball.cpp
+C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\Ball.cpp(89,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\Ball.cpp(89,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  BoxCollider.cpp
+  Brick.cpp
+  CircleCollider.cpp
+  Collider.cpp
+  GameEntity.cpp
+  GameManager.cpp
+  Graphics.cpp
+  InputManager.cpp
   Level.cpp
-  PlayScreen.cpp
-  ScreenManager.cpp
   main.cpp
+  PhysEntity.cpp
+C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\PhysEntity.cpp(14,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\PhysEntity.cpp(72,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\PhysEntity.cpp(73,22): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
+  Compiling...
+  PhysicsManager.cpp
+C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\PhysicsManager.cpp(36,21): warning C4018: '<': signed/unsigned mismatch
+  Player.cpp
+  PlayScreen.cpp
+  PlaySideBar.cpp
+  Scoreboard.cpp
+  ScreenManager.cpp
+  StartScreen.cpp
+C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.cpp(312,16): warning C4552: '-': result of expression not used
+  Texture.cpp
+  Timer.cpp
+  Generating Code...
+Debug\BoxCollider.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\CircleCollider.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\Collider.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\PhysEntity.obj : warning LNK4042: object specified more than once; extras ignored
+Debug\PhysicsManager.obj : warning LNK4042: object specified more than once; extras ignored
   SDL_Tut.vcxproj -> C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libmodplug-1.dll
@@ -59,51 +105,3 @@
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\SwitchSelect.wav
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\WallBounce.wav
   38 File(s) copied
-
-﻿  Ball.cpp
-  GameManager.cpp
-  Level.cpp
-  PlayScreen.cpp
-  Player.cpp
-  ScreenManager.cpp
-  main.cpp
-  Generating Code...
-  SDL_Tut.vcxproj -> D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
-  The system cannot find the path specified.
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADE.TTF
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADEPI.TTF
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Ball.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Black.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BulletBall.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Cursor.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\emulogic.ttf
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\GreenBrick.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\LeftWall.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\namco__.ttf
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\OrangeBrick.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Paddle.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\PlayerExplosion.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\PlayerShips.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\RedBrick.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\RightWall.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test1.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test11.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test12.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test2.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test3.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test5.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test6.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test8.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test9.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\TopWall.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Bricks\Brick Destroy Animation.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Bricks\Yellow Brick.png
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\coin_credit.wav
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\EnterSelect.wav
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\Hitmarker.wav
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\Oof.wav
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\PaddleBounce.wav
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\SwitchSelect.wav
-  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\WallBounce.wav
-  35 File(s) copied
-

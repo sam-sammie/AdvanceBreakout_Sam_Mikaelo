@@ -16,7 +16,7 @@ Ball::Ball() {
 	DirectionY = 1;
 	DirectionX = -1;
 
-	AddCollider(new BoxCollider(Vector2(15.0f, 15.0f)), Vector2(-7.0f, -7.0f));
+	AddCollider(new CircleCollider(10,false));
 
 	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Friendly);
 

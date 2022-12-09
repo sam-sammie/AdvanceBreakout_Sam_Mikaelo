@@ -1,6 +1,4 @@
-﻿  Ball.cpp
-C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\Ball.cpp(83,52): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\Ball.cpp(83,29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  Level.cpp
   SDL_Tut.vcxproj -> C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libjpeg-9.dll
   C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libmodplug-1.dll

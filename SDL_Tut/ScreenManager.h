@@ -3,7 +3,7 @@
 #include "StartScreen.h"
 #include "BackGroundStars.h"
 #include "PlayScreen.h"
-
+#include "Credits.h"
 
 
 class ScreenManager
@@ -20,12 +20,13 @@ private:
 	~ScreenManager();
 
 private:
-	enum Screens {Start, Play};
+	enum Screens {Start, Play, Credit};
 	Screens mCurrentScreen; // used to determine which screens needs to be rendered adn updating
 	InputManager* m_pInput;
 	BackgroundStars* m_pBackgroundStars;
 	StartScreen* m_pStartScreen;
 	PlayScreen* m_pPlayScreen;
+	Credits* m_pCredits;
 
 public:
 	void Update();

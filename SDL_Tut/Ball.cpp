@@ -112,10 +112,10 @@ void Ball::Hit(PhysEntity* other) {
 		DirectionX *= -1;
 		m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
 	}
-	else if (Position().x >= other->Position().x) {
-		DirectionX *= 1;
+	/*else if (Position().x >= other->Position().x) {
+		DirectionX *= -1;
 		m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
-	}
+	}*/
 
 	if (Position().y <= other->Position().y) {
 		DirectionY *= -1;

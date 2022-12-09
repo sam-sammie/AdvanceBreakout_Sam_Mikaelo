@@ -18,7 +18,6 @@ RedBrick::RedBrick()
 
 	//Red Brick
 	AddCollider(new BoxCollider(Vector2(105.0f, 56.5f)), Vector2(-260.0f, -566.5f));
-
 	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 
 }
@@ -57,6 +56,10 @@ void RedBrick::Update()
 
 void RedBrick::Render()
 {
+	if (!Active()) {
+
+	}
+
 	if (Active()) {
 		m_pRedBreakAnimation->Render();
 		PhysEntity::Render();

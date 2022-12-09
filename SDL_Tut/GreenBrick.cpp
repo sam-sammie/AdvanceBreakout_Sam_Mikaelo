@@ -16,6 +16,11 @@ GreenBrick::GreenBrick()
 	m_pGreenBreakAnimation->Position(-235.0f, -470.0f);
 	m_pGreenBreakAnimation->SetWrapMode(AnimatedTexture::Once);
 
+	////Green Brick
+	AddCollider(new BoxCollider(Vector2(105.9f, 56.0f)), Vector2(-260.0f, -437.5f));
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
+
+
 }
 
 GreenBrick::~GreenBrick()
@@ -33,10 +38,10 @@ void GreenBrick::Update()
 	if (Active()) {
 
 	}
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I))
+	/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I))
 	{
 		m_pGreenBreakAnimation->Update();
-	}
+	}*/
 	/*else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
 	{
 
@@ -59,7 +64,7 @@ void GreenBrick::Render()
 
 	if (Active()) {
 		m_pGreenBreakAnimation->Render();
-		/*PhysEntity::Render();*/
+		PhysEntity::Render();
 	}
 }
 

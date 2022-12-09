@@ -1,6 +1,4 @@
-﻿  GreenBrick.cpp
-  OrangeBrick.cpp
-  Generating Code...
+﻿  Red Brick.cpp
   SDL_Tut.vcxproj -> D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
   The system cannot find the path specified.
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADE.TTF
@@ -9,6 +7,7 @@
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Black.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BoxCollider.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BroadPhaseCollider.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BulletBall.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\CircleCollider.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Cursor.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\emulogic.ttf
@@ -21,8 +20,15 @@
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\PlayerShips.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\RedBrick.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\RightWall.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test1.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test11.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test12.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test2.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test3.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test5.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test6.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test8.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test9.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\TopWall.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Bricks\Brick Destroy Animation.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Bricks\Yellow Brick.png
@@ -33,4 +39,4 @@
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\PaddleBounce.wav
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\SwitchSelect.wav
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\WallBounce.wav
-  30 File(s) copied
+  38 File(s) copied

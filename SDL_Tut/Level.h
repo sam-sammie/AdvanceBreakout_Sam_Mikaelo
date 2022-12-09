@@ -3,7 +3,7 @@
 #include "PlaySideBar.h"
 #include "Player.h"
 #include "Ball.h"
-#include "Brick.h"
+#include "Red Brick.h"
 #include "Texture.h"
 
 class Level : public GameEntity

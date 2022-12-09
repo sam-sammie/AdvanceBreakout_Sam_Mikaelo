@@ -49,13 +49,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
-    <ClCompile Include="Brick.cpp">
-      <Filter>Source Files\Breakout</Filter>
-    </ClCompile>
     <ClCompile Include="Level.cpp">
-      <Filter>Source Files\Breakout</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayScreen.cpp">
       <Filter>Source Files\Breakout</Filter>
     </ClCompile>
     <ClCompile Include="PlaySideBar.cpp">
@@ -71,6 +65,21 @@
       <Filter>Source Files\Breakout</Filter>
     </ClCompile>
     <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\Breakout</Filter>
+    </ClCompile>
+    <ClCompile Include="Red Brick.cpp">
+      <Filter>Source Files\Breakout\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="YellowBrick.cpp">
+      <Filter>Source Files\Breakout\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="OrangeBrick.cpp">
+      <Filter>Source Files\Breakout\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="GreenBrick.cpp">
+      <Filter>Source Files\Breakout\Bricks</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayScreen.cpp">
       <Filter>Source Files\Breakout</Filter>
     </ClCompile>
   </ItemGroup>
@@ -120,12 +129,6 @@
     <ClInclude Include="Ball.h">
       <Filter>Header Files\Entities</Filter>
     </ClInclude>
-    <ClInclude Include="Brick.h">
-      <Filter>Header Files\Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayScreen.h">
-      <Filter>Header Files\Breakout</Filter>
-    </ClInclude>
     <ClInclude Include="PlaySideBar.h">
       <Filter>Header Files\Breakout</Filter>
     </ClInclude>
@@ -148,6 +151,21 @@
       <Filter>Header Files\Breakout</Filter>
     </ClInclude>
     <ClInclude Include="Timer.h">
+      <Filter>Header Files\Breakout</Filter>
+    </ClInclude>
+    <ClInclude Include="YellowBrick.h">
+      <Filter>Source Files\Breakout\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="Red Brick.h">
+      <Filter>Source Files\Breakout\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="OrangeBrick.h">
+      <Filter>Source Files\Breakout\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="GreenBrick.h">
+      <Filter>Source Files\Breakout\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayScreen.h">
       <Filter>Header Files\Breakout</Filter>
     </ClInclude>
   </ItemGroup>
@@ -184,6 +202,9 @@
     </Filter>
     <Filter Include="Source Files\Breakout">
       <UniqueIdentifier>{976016b4-b545-4777-af19-74ded02a7512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Breakout\Bricks">
+      <UniqueIdentifier>{105c2789-6d52-4bae-9b6d-a01a1174f044}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

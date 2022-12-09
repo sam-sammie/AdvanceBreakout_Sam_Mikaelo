@@ -156,7 +156,9 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="AudioManager.cpp" />
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="BoxCollider.cpp" />
-    <ClCompile Include="Brick.cpp" />
+    <ClCompile Include="GreenBrick.cpp" />
+    <ClCompile Include="OrangeBrick.cpp" />
+    <ClCompile Include="Red Brick.cpp" />
     <ClCompile Include="CircleCollider.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="GameEntity.cpp" />
@@ -175,6 +177,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="StartScreen.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="YellowBrick.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Visual Studio 2022\SDL_Tutorial2.0\SDL_Tutorial\SDL_Tutorial\SDL_Tutorial\PhysicsHelper.h" />
@@ -183,7 +186,9 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClInclude Include="AudioManager.h" />
     <ClInclude Include="Ball.h" />
     <ClInclude Include="BoxCollider.h" />
-    <ClInclude Include="Brick.h" />
+    <ClInclude Include="GreenBrick.h" />
+    <ClInclude Include="OrangeBrick.h" />
+    <ClInclude Include="Red Brick.h" />
     <ClInclude Include="CircleCollider.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="GameEntity.h" />
@@ -202,6 +207,7 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClInclude Include="StartScreen.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Timer.h" />
+    <ClInclude Include="YellowBrick.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

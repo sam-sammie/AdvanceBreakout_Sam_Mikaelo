@@ -21,6 +21,7 @@ ScreenManager::ScreenManager() {
 	//m_pBackgroundStars = BackgroundStars::Instance();
 	m_pStartScreen = new StartScreen();
 	m_pPlayScreen = new PlayScreen();
+	m_pCredits = new Credits();
 
 	mCurrentScreen = Start;
 }
@@ -36,6 +37,9 @@ ScreenManager::~ScreenManager() {
 
 	delete m_pPlayScreen;
 	m_pPlayScreen = nullptr;
+
+	delete m_pCredits;
+	m_pCredits = nullptr;
 }
 
 void ScreenManager::Update() {
@@ -45,10 +49,15 @@ void ScreenManager::Update() {
 	case Start:
 		m_pStartScreen->Update();
 
-		if (m_pInput->KeyPressed(SDL_SCANCODE_RETURN)) {
+		if (m_pInput->KeyPressed(SDL_SCANCODE_RETURN) && m_pStartScreen->SelectedMode() == 0) {
+
 			mCurrentScreen = Play;
 			m_pStartScreen->ResetAnimation();
 			m_pPlayScreen->StartNewGame();
+		}
+		if (m_pInput->KeyPressed(SDL_SCANCODE_RETURN) && m_pStartScreen->SelectedMode() == 1) {
+			mCurrentScreen = Credit;
+			
 		}
 		break;
 
@@ -61,6 +70,14 @@ void ScreenManager::Update() {
 		if (m_pPlayScreen->GameOver()) {
 			mCurrentScreen = Start;
 		}
+		break;
+
+	case Credit:
+		m_pCredits->Update();
+		if (m_pInput->KeyPressed(SDL_SCANCODE_ESCAPE)) {
+			mCurrentScreen = Start;
+		}
+		
 		break;
 	}
 }
@@ -75,6 +92,10 @@ void ScreenManager::Render() {
 
 	case Play:
 		m_pPlayScreen->Render();
+		break;
+
+	case Credit:
+		m_pCredits->Render();
 		break;
 	}
 }

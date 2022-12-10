@@ -17,7 +17,7 @@ Ball::Ball() {
 	DirectionY = 1;
 	DirectionX = -1;
 
-	AddCollider(new BoxCollider(Vector2(15.0f, 15.0f)), Vector2(-7.0f, -7.0f));
+	AddCollider(new CircleCollider(10,false));
 
 	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Friendly);
 
@@ -116,10 +116,10 @@ void Ball::Hit(PhysEntity* other) {
 		DirectionX *= -1;
 		m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
 	}
-	else if (Position().x >= other->Position().x) {
+	/*else if (Position().x >= other->Position().x) {
 		DirectionX *= -1;
 		m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
-	}
+	}*/
 
 	if (Position().y <= other->Position().y) {
 		DirectionY *= -1;

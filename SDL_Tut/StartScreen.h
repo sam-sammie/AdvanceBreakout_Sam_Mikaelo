@@ -6,6 +6,9 @@
 #include "BackGroundStars.h"
 #include "AudioManager.h"
 #include "PlaySideBar.h"
+#include "Credits.h"
+#include "PlayScreen.h"
+
 
 using namespace SDLFramework;
 
@@ -16,6 +19,7 @@ private:
 	AudioManager* m_pAudioManager;
 
 	Texture* m_pBackdrop;
+	Credits* m_pCredits;
 
 	// Top Bar Entities
 	GameEntity* m_pTopBar;

@@ -18,8 +18,8 @@ StartScreen::StartScreen() {
 
 	// Play mode entites
 	m_pPlayModes = new GameEntity(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * .55f);
-	m_pOnePlayerMode = new Texture("1 PLAYER ", "ARCADEPI.ttf", 32, { 230,230,230 });
-	m_pTwoPlayerMode = new Texture("2 PLAYERS ", "ARCADEPI.ttf", 32, { 230,230,230 });
+	m_pOnePlayerMode = new Texture("START GAME ", "ARCADEPI.ttf", 32, { 230,230,230 });
+	m_pTwoPlayerMode = new Texture("CREDITS ", "ARCADEPI.ttf", 32, { 230,230,230 });
 	m_pCursor = new Texture("Cursor.png");
 	
 	//Bottom Bar Entites
@@ -39,11 +39,11 @@ StartScreen::StartScreen() {
 
 	// Top bar entities
 	//m_pTopBar->Parent(this);
-	m_pPlayerOne->Parent(m_pTopBar);
-	m_pPlayerTwo->Parent(m_pTopBar);
+	//m_pPlayerOne->Parent(m_pTopBar);
+	//m_pPlayerTwo->Parent(m_pTopBar);
 	m_pHiScore->Parent(m_pTopBar);
-	m_pPlayerOneScore->Parent(m_pTopBar);
-	m_pPlayerTwoScore->Parent(m_pTopBar);
+	//m_pPlayerOneScore->Parent(m_pTopBar);
+	//m_pPlayerTwoScore->Parent(m_pTopBar);
 	m_pTopScore->Parent(m_pTopBar);
 
 	// Play mode entities
@@ -52,13 +52,13 @@ StartScreen::StartScreen() {
 	m_pTwoPlayerMode->Parent(m_pPlayModes);
 	m_pCursor->Parent(m_pOnePlayerMode);
 
-	m_pPlayerOne->Position(-Graphics::SCREEN_WIDTH * 0.35f, 0.0f);
-	m_pPlayerTwo->Position(Graphics::SCREEN_WIDTH * 0.35F, 0.0F);
+	//m_pPlayerOne->Position(-Graphics::SCREEN_WIDTH * 0.35f, 0.0f);
+	//m_pPlayerTwo->Position(Graphics::SCREEN_WIDTH * 0.35F, 0.0F);
 	m_pHiScore->Position(-30.0f, 0.0f);
-	m_pPlayerOneScore->Position(-Graphics::SCREEN_WIDTH * 0.35f, 40.0f);
-	m_pPlayerTwoScore->Position(Graphics::SCREEN_WIDTH * 0.35f, 40.0f);
+	//m_pPlayerOneScore->Position(-Graphics::SCREEN_WIDTH * 0.35f, 40.0f);
+	//m_pPlayerTwoScore->Position(Graphics::SCREEN_WIDTH * 0.35f, 40.0f);
 	m_pTopScore->Position(Graphics::SCREEN_WIDTH * 0.05f, 40.0f);
-	m_pTopScore->Score(645987);
+	m_pTopScore->Score(000);
 
 	//Play mode entites
 	m_pOnePlayerMode->Position(-200.0f, 35.0f);
@@ -175,6 +175,8 @@ StartScreen::~StartScreen() {
 	delete m_pBackdrop;
 	m_pBackdrop = nullptr;
 
+	delete m_pCredits;
+	m_pCredits = nullptr;
 
 	AudioManager::Release();
 	m_pAudioManager = nullptr;
@@ -249,7 +251,12 @@ void StartScreen::Update() {
 		}
 		else if (m_pInputManager->KeyPressed(SDL_SCANCODE_RETURN)) {
 			m_pAudioManager->PlaySFX("SFX/EnterSelect.wav", 0, 0);
+
+			/*if (mSelectedMode = 1) {
+				m_pPlayScreen->StartNewGame();
+			}*/
 		}
+		
 	}
 	
 	//if (!mAnimationDone) {
@@ -270,8 +277,8 @@ void StartScreen::Render() {
 
 	m_pBackdrop->Render();
 	m_pRights->Render(); 
-	m_pPlayerOne->Render();
-	m_pPlayerTwo->Render();
+	//m_pPlayerOne->Render();
+	//m_pPlayerTwo->Render();
 	m_pHiScore->Render();
 	m_pOnePlayerMode->Render();
 	m_pTwoPlayerMode->Render();
@@ -280,11 +287,11 @@ void StartScreen::Render() {
 	m_pDates->Render();
 	m_pRights->Render();
 	m_pLogo->Render();
-	m_pPlayerOneScore->Render();
-	m_pPlayerTwoScore->Render();
+	//m_pPlayerOneScore->Render();
+	//m_pPlayerTwoScore->Render();
 	m_pTopScore->Render();
 	m_pLogo->Render();
-
+	
 
 
 	if (!mAnimationDone) {

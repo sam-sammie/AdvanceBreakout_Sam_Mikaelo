@@ -24,7 +24,9 @@ Player::Player() {
 	m_pDeathAnimation->Position(Vec2_Zero);
 	m_pDeathAnimation->SetWrapMode(AnimatedTexture::Once);
 
-	AddCollider(new BoxCollider(Vector2(110.0f, 15.0f)),Vector2(-60.0f, 60.0f));
+
+	AddCollider(new BoxCollider(Vector2(100.0f, 10.0f)), Vector2(-30.0f, 60.0f));
+
 
 	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 

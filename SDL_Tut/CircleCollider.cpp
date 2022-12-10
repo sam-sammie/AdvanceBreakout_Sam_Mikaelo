@@ -26,6 +26,6 @@ Vector2 CircleCollider::GetFurthestPoint()
 float CircleCollider::GetRadius()
 {
 	return mRadius;
-
 }
+
 

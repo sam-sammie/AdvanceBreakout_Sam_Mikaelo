@@ -25,3 +25,4 @@ void Collider::Render() {
 		m_pDebugTexture->Render();
 	}
 }
+

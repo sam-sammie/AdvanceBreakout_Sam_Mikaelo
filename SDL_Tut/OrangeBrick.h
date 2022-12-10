@@ -6,40 +6,43 @@
 #include "PhysEntity.h"
 #include "PhysicsManager.h"
 
-using namespace SDLFramework;
+namespace SDLFramework {
+	
+	class OrangeBrick : public PhysEntity
+	{
+	private:
 
-class OrangeBrick : public PhysEntity
-{
-private:
+		Timer* m_pTimer;
+		InputManager* m_pInput;
+		AudioManager* m_pAudio;
 
-	Timer* m_pTimer;
-	InputManager* m_pInput;
-	AudioManager* m_pAudio;
+		AnimatedTexture* m_pOrangeBreakAnimation;
 
-	AnimatedTexture* m_pOrangeBreakAnimation;
-
-	bool mVisible;
-	bool mAnimating;
-
-
-
-protected:
-	bool IgnoreCollisions() override;
-
-public:
-	OrangeBrick();
-	~OrangeBrick();
-
-	void Hit(PhysEntity* other);
-
-	void Visible(bool visible);
-	bool IsAnimating();
-	bool InDeathAnimation();
+		bool mVisible;
+		bool mAnimating;
 
 
-	void Update();
-	void Render();
 
-};
+	protected:
+		bool IgnoreCollisions() override;
+
+	public:
+		OrangeBrick();
+		~OrangeBrick();
+
+		void Hit(PhysEntity* other);
+
+		void Visible(bool visible);
+		bool IsAnimating();
+		bool InDeathAnimation();
+
+
+		void Update();
+		void Render();
+
+	};
+}
+
+
 
 #endif // !_ORANGEBRICK_H

@@ -15,6 +15,11 @@ YellowBrick::YellowBrick()
 	m_pYellowBreakAnimation->Scale(Vector2(2.0f, 2.0f));
 	m_pYellowBreakAnimation->Position(-235.0f, -405.0f);
 	m_pYellowBreakAnimation->SetWrapMode(AnimatedTexture::Once);
+
+	////////YellowBrick
+	//AddCollider(new BoxCollider(m_pYellowBreakAnimation->ScaledDimensions()));
+
+	//mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 }
 
 
@@ -59,7 +64,7 @@ void YellowBrick::Render()
 
 	if (Active()) {
 		m_pYellowBreakAnimation->Render();
-		/*PhysEntity::Render();*/
+		PhysEntity::Render();
 	}
 }
 
@@ -81,6 +86,7 @@ bool YellowBrick::IsAnimating() {
 
 void YellowBrick::Hit(PhysEntity* other) {
 	m_pYellowBreakAnimation->Update();
+	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 	Active(false);
 }
 

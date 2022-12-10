@@ -59,6 +59,7 @@ void GreenBrick::Render()
 
 	if (Active()) {
 		m_pGreenBreakAnimation->Render();
+		m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 		/*PhysEntity::Render();*/
 	}
 }

@@ -153,20 +153,20 @@
     <ClInclude Include="Timer.h">
       <Filter>Header Files\Breakout</Filter>
     </ClInclude>
-    <ClInclude Include="YellowBrick.h">
-      <Filter>Source Files\Breakout\Bricks</Filter>
-    </ClInclude>
-    <ClInclude Include="Red Brick.h">
-      <Filter>Source Files\Breakout\Bricks</Filter>
-    </ClInclude>
-    <ClInclude Include="OrangeBrick.h">
-      <Filter>Source Files\Breakout\Bricks</Filter>
-    </ClInclude>
-    <ClInclude Include="GreenBrick.h">
-      <Filter>Source Files\Breakout\Bricks</Filter>
-    </ClInclude>
     <ClInclude Include="PlayScreen.h">
       <Filter>Header Files\Breakout</Filter>
+    </ClInclude>
+    <ClInclude Include="GreenBrick.h">
+      <Filter>Source Files\Breakout\Bricks\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="OrangeBrick.h">
+      <Filter>Source Files\Breakout\Bricks\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="Red Brick.h">
+      <Filter>Source Files\Breakout\Bricks\Bricks</Filter>
+    </ClInclude>
+    <ClInclude Include="YellowBrick.h">
+      <Filter>Source Files\Breakout\Bricks\Bricks</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +205,9 @@
     </Filter>
     <Filter Include="Source Files\Breakout\Bricks">
       <UniqueIdentifier>{105c2789-6d52-4bae-9b6d-a01a1174f044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Breakout\Bricks\Bricks">
+      <UniqueIdentifier>{7a1309c9-60c3-4447-a8db-de7590380102}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,10 +1,8 @@
 #include "PhysicsManager.h"
 
+PhysicsManager* PhysicsManager::s_pInstance = nullptr;
 
-PhysicsManager * PhysicsManager::s_pInstance = nullptr;
-
-PhysicsManager * PhysicsManager::Instance() {
-
+PhysicsManager* PhysicsManager::Instance() {
 	if (s_pInstance == nullptr) {
 		s_pInstance = new PhysicsManager();
 	}
@@ -21,9 +19,7 @@ void PhysicsManager::SetLayerCollisionMask(CollisionLayers layer, CollisionFlags
 	mLayerMasks[static_cast<unsigned int>(layer)] = std::bitset<static_cast<unsigned int>(CollisionLayers::MaxLayers)>(static_cast<unsigned int>(flags));
 }
 
-
 unsigned long PhysicsManager::RegisterEntity(PhysEntity* entity, CollisionLayers layer) {
-
 	m_pCollisionLayers[static_cast<unsigned int>(layer)].push_back(entity);
 	mLastId++;
 	return mLastId;

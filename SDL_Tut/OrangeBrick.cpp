@@ -83,6 +83,7 @@ bool OrangeBrick::IsAnimating() {
 
 void OrangeBrick::Hit(PhysEntity* other) {
 	m_pOrangeBreakAnimation->Update();
+	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 	Active(false);
 }
 

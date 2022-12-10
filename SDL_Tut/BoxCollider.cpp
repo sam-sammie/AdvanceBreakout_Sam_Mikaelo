@@ -1,6 +1,5 @@
 #include "BoxCollider.h"
 
-
 void BoxCollider::AddVert(int index, Vector2 pos) {
 	m_pVerts[index] = new GameEntity(pos);
 	m_pVerts[index]->Parent(this);
@@ -18,7 +17,6 @@ BoxCollider::BoxCollider(Vector2 size)
 		m_pDebugTexture->Scale(size);
 	}
 }
-
 
 BoxCollider::~BoxCollider() {
 	for (auto v : m_pVerts) {
@@ -47,4 +45,5 @@ Vector2 BoxCollider::GetFurthestPoint() {
 Vector2 BoxCollider::GetVertexPos(int index) {
 	return m_pVerts[index]->Position();
 }
+
 

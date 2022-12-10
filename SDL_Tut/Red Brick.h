@@ -1,47 +1,46 @@
-#ifndef _BRICKS_H
-#define _BRICKS_H
+#ifndef _REDBRICKS_H
+#define _REDBRICKS_H
 #include "AnimatedTexture.h"
 #include "InputManager.h"
 #include "AudioManager.h"
 #include "PhysEntity.h"
 #include "PhysicsManager.h"
-#include "YellowBrick.h"
 
-using namespace SDLFramework;
-
-class RedBrick : public PhysEntity
+namespace SDLFramework 
 {
+	class RedBrick : public PhysEntity
+	{
 
-private:
-	
-	Timer* m_pTimer;
-	InputManager* m_pInput;
-	AudioManager* m_pAudio;
+	private:
 
-	AnimatedTexture* m_pRedBreakAnimation;
-	//AnimatedTexture* m_pOrangeBreakAnimation;
-	//AnimatedTexture* m_pGreenBreakAnimation;
+		Timer* m_pTimer;
+		InputManager* m_pInput;
+		AudioManager* m_pAudio;
 
-	bool mVisible;
-	bool mAnimating;
+		AnimatedTexture* m_pRedBreakAnimation;
 
-protected:
-	bool IgnoreCollisions() override;
+		bool mVisible;
+		bool mAnimating;
 
-public:
-	RedBrick();
-	~RedBrick();
-	
-	void Hit(PhysEntity* other);
+	protected:
+		bool IgnoreCollisions() override;
 
-	void Visible(bool visible);
-	bool IsAnimating();
-	bool InDeathAnimation();
+	public:
+		RedBrick();
+		~RedBrick();
+
+		void Hit(PhysEntity* other) override;
+
+		void Visible(bool visible);
+		bool IsAnimating();
 
 
-	void Update();
-	void Render();
+		void Update();
+		void Render();
 
-};
+	};
+}
+
+
 
 #endif // !_BRICKS_H

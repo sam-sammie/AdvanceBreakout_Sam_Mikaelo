@@ -1,5 +1,10 @@
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\vc143.pdb
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\vc143.idb
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\scoreboard.obj
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\playsidebar.obj
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\playscreen.obj
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\player.obj
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\physicsmanager.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\physentity.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\main.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\level.obj
@@ -9,33 +14,26 @@ d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\gamemanager.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\gameentity.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\collider.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\circlecollider.obj
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\brick.obj
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\red brick.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\boxcollider.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\ball.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\audiomanager.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\assetmanager.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\animatedtexture.obj
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\yellowbrick.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\timer.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\texture.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\startscreen.obj
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\screenmanager.obj
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\scoreboard.obj
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\playsidebar.obj
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\playscreen.obj
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\player.obj
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\physicsmanager.obj
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\yellowbrick.obj
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\red brick.obj
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\orangebrick.obj
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\greenbrick.obj
+d:\origins\github\advancebreakout_sam_mikaelo\debug\sdl_tut.exe
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.ilk
 d:\origins\github\advancebreakout_sam_mikaelo\debug\sdl_tut.pdb
+d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\red brick.obj.enc
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\cl.command.1.tlog
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\cl.read.1.tlog
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\cl.write.1.tlog
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.6104-cvtres.read.1.tlog
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.6104-cvtres.write.1.tlog
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.6104-rc.read.1.tlog
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.6104-rc.write.1.tlog
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.6104.read.1.tlog
-d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.6104.write.1.tlog
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.command.1.tlog
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.read.1.tlog
 d:\origins\github\advancebreakout_sam_mikaelo\sdl_tut\debug\sdl_tut.tlog\link.write.1.tlog

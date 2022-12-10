@@ -363,6 +363,8 @@ void PlayScreen::Render() {
 			m_pLevel->Render();
 		}
 		m_pPlayer->Render();
+		
+
 		m_pBrickRow_1->Render();
 		m_pBrickRow_2->Render();
 		m_pBrickRow_3->Render();
@@ -441,7 +443,7 @@ void PlayScreen::Update() {
 	{
 		mGameStarted = true;
 	}
-			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
+			/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
 			{
 				for (int i = 0; i < 9 - 1; i++) {
 					Redbrick[0]->Update();
@@ -482,9 +484,7 @@ void PlayScreen::Update() {
 					Yellowbrick[i] = Yellowbrick[i + 1];
 
 				}
-				m_pPlayer->YellowBrickDestroyed();
-				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
-			}		
+			}		*/
 }
 
 void PlayScreen::ResetAnimation() {

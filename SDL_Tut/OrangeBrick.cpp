@@ -18,6 +18,12 @@ OrangeBrick::OrangeBrick()
 	m_pOrangeBreakAnimation->SetWrapMode(AnimatedTexture::Once);
 
 
+	////Orange Brick
+	AddCollider(new BoxCollider(Vector2(105.5f, 56.0f)), Vector2(-260.0f, -502.5f));
+
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
+
+
 }
 
 OrangeBrick::~OrangeBrick() 
@@ -33,12 +39,12 @@ OrangeBrick::~OrangeBrick()
 void OrangeBrick::Update()
 {
 	if (Active()) {
-
-	}
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
-	{
 		m_pOrangeBreakAnimation->Update();
 	}
+	/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
+	{
+		m_pOrangeBreakAnimation->Update();
+	}*/
 	/*else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
 	{
 
@@ -61,7 +67,7 @@ void OrangeBrick::Render()
 
 	if (Active()) {
 		m_pOrangeBreakAnimation->Render();
-		/*PhysEntity::Render();*/
+		PhysEntity::Render();
 	}
 }
 

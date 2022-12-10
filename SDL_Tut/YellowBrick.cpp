@@ -16,10 +16,10 @@ YellowBrick::YellowBrick()
 	m_pYellowBreakAnimation->Position(-235.0f, -405.0f);
 	m_pYellowBreakAnimation->SetWrapMode(AnimatedTexture::Once);
 
-	////////YellowBrick
-	//AddCollider(new BoxCollider(m_pYellowBreakAnimation->ScaledDimensions()));
+	//YellowBrick
+	AddCollider(new BoxCollider(Vector2(105.9f, 56.0f)), Vector2(-260.0f, -373.0f));
 
-	//mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
+	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 }
 
 
@@ -38,10 +38,10 @@ void YellowBrick::Update()
 	if (Active()) {
 		m_pYellowBreakAnimation->Update();
 	}
-	if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U)) 
+	/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U)) 
 	{
 		m_pYellowBreakAnimation->Update();
-	}
+	}*/
 	/*else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
 	{
 

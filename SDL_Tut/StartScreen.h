@@ -18,6 +18,7 @@ private:
 	InputManager* m_pInputManager;
 	AudioManager* m_pAudioManager;
 
+	Texture* m_pOptionBorder;
 	Texture* m_pBackdrop;
 	Credits* m_pCredits;
 
@@ -39,7 +40,7 @@ private:
 	Vector2 mCursorOffset;
 	int mSelectedMode;
 
-	//Bottom Baar Entities
+	//Bottom Bar Entities
 	GameEntity* m_pBottomBar;
 	Texture* m_pNamco;
 	Texture* m_pDates;

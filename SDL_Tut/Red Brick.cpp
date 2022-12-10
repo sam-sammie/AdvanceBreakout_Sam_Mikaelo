@@ -15,8 +15,8 @@ RedBrick::RedBrick()
 	m_pRedBreakAnimation->Scale(Vector2(2.0f, 2.0f));
 	m_pRedBreakAnimation->Position(-235.0f, -600.0f);
 
-	//Red Brick
-	AddCollider(new BoxCollider(m_pRedBreakAnimation->ScaledDimensions() * 0.3f));
+	////Red Brick
+	AddCollider(new BoxCollider(Vector2(105.0f, 56.5f)), Vector2(-260.0f, -566.5f));
 
 	mId = PhysicsManager::Instance()->RegisterEntity(this, PhysicsManager::CollisionLayers::Hostile);
 
@@ -41,6 +41,7 @@ void RedBrick::Update()
 	}
 	/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
 	{
+		m_pRedBreakAnimation->Update();
 	}*/
 	/*else if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
 	{
@@ -60,6 +61,7 @@ void RedBrick::Render()
 {
 	if (Active()) {
 		m_pRedBreakAnimation->Render();
+		m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 		PhysEntity::Render();
 	}
 }

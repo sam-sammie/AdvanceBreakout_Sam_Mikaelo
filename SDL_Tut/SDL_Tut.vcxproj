@@ -161,7 +161,6 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClCompile Include="Red Brick.cpp" />
     <ClCompile Include="CircleCollider.cpp" />
     <ClCompile Include="Collider.cpp" />
-    <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Credits.cpp" />
     <ClCompile Include="GameEntity.cpp" />
     <ClCompile Include="GameManager.cpp" />
@@ -193,7 +192,6 @@ xcopy "$(ProjectDir)..\Assets\*" "$(OutDir)Assets\" /y /s</Command>
     <ClInclude Include="Red Brick.h" />
     <ClInclude Include="CircleCollider.h" />
     <ClInclude Include="Collider.h" />
-    <ClInclude Include="Brick.h" />
     <ClInclude Include="Credits.h" />
     <ClInclude Include="GameEntity.h" />
     <ClInclude Include="GameManager.h" />

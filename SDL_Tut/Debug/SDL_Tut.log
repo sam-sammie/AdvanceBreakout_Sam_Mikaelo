@@ -1,5 +1,12 @@
-
 ﻿  Red Brick.cpp
+  GameManager.cpp
+  Level.cpp
+  main.cpp
+  PlayScreen.cpp
+  ScreenManager.cpp
+  StartScreen.cpp
+D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.cpp(327,16): warning C4552: '-': result of expression not used
+  Generating Code...
   SDL_Tut.vcxproj -> D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
   The system cannot find the path specified.
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADE.TTF
@@ -11,10 +18,12 @@
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BulletBall.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\CircleCollider.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Cursor.png
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Cursor.png~
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\emulogic.ttf
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\GreenBrick.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\LeftWall.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\namco__.ttf
+  D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\OptionBorder.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\OrangeBrick.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Paddle.png
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\PlayerExplosion.png
@@ -40,60 +49,4 @@
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\PaddleBounce.wav
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\SwitchSelect.wav
   D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\WallBounce.wav
-
-﻿  StartScreen.cpp
-C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.cpp(319,16): warning C4552: '-': result of expression not used
-  SDL_Tut.vcxproj -> C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libjpeg-9.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libmodplug-1.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libogg-0.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libopus-0.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libopusfile-0.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libpng16-16.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libtiff-5.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\libwebp-7.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\SDL2.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\SDL2_image.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\SDL2_mixer.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\SDL2_ttf.dll
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\dep\devel\x86\zlib1.dll
-
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADE.TTF
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\ARCADEPI.TTF
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Ball.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Black.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BoxCollider.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BroadPhaseCollider.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\BulletBall.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\CircleCollider.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Cursor.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\emulogic.ttf
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\GreenBrick.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\LeftWall.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\namco__.ttf
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\OrangeBrick.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Paddle.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\PlayerExplosion.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\PlayerShips.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\RedBrick.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\RightWall.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test1.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test11.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test12.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test2.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test3.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test5.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test6.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test8.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Test9.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\TopWall.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Bricks\Brick Destroy Animation.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\Bricks\Yellow Brick.png
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\coin_credit.wav
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\EnterSelect.wav
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\Hitmarker.wav
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\Oof.wav
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\PaddleBounce.wav
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\SwitchSelect.wav
-  C:\Users\Miko\Documents\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\..\Assets\SFX\WallBounce.wav
-
+  40 File(s) copied

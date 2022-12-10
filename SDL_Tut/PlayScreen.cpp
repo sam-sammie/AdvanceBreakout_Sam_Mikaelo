@@ -443,6 +443,8 @@ void PlayScreen::Update() {
 	{
 		mGameStarted = true;
 	}
+
+
 			/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
 			{
 				for (int i = 0; i < 9 - 1; i++) {
@@ -484,6 +486,8 @@ void PlayScreen::Update() {
 					Yellowbrick[i] = Yellowbrick[i + 1];
 
 				}
+				m_pPlayer->YellowBrickDestroyed();
+				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 			}		*/
 }
 

@@ -7,6 +7,10 @@ StartScreen::StartScreen() {
 	m_pBackdrop = new Texture("Backdrop.png");
 	m_pBackdrop->Position(Graphics::SCREEN_WIDTH * 0.50f, Graphics::SCREEN_HEIGHT * 0.50f);
 
+	/*m_pOptionBorder = new Texture("OptionBorder.png");
+	m_pOptionBorder->Scale(Vector2(2.6f, 2.5f));
+	m_pOptionBorder->Position(Graphics::SCREEN_WIDTH * 0.24f, Graphics::SCREEN_HEIGHT * 0.55f);*/
+
 	// Top bar entities
 	m_pTopBar = new GameEntity(Graphics::SCREEN_WIDTH * 0.5f, 80.0f);
 	m_pPlayerOne = new Texture("1UP", "ARCADEPI.ttf", 32, { 200,0,0 });
@@ -174,6 +178,9 @@ StartScreen::~StartScreen() {
 
 	delete m_pBackdrop;
 	m_pBackdrop = nullptr;
+	
+	/*delete m_pOptionBorder;
+	m_pOptionBorder = nullptr;*/
 
 	delete m_pCredits;
 	m_pCredits = nullptr;
@@ -277,6 +284,7 @@ void StartScreen::Render() {
 
 	m_pBackdrop->Render();
 	m_pRights->Render(); 
+	/*m_pOptionBorder->Render();*/
 	//m_pPlayerOne->Render();
 	//m_pPlayerTwo->Render();
 	m_pHiScore->Render();

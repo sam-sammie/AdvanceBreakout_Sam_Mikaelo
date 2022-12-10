@@ -31,6 +31,8 @@ namespace SDLFramework
 
 		void Hit(PhysEntity* other) override;
 
+		int Score();
+
 		void Visible(bool visible);
 		bool IsAnimating();
 

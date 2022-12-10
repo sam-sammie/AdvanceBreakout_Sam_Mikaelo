@@ -58,7 +58,7 @@ StartScreen::StartScreen() {
 	//m_pPlayerOneScore->Position(-Graphics::SCREEN_WIDTH * 0.35f, 40.0f);
 	//m_pPlayerTwoScore->Position(Graphics::SCREEN_WIDTH * 0.35f, 40.0f);
 	m_pTopScore->Position(Graphics::SCREEN_WIDTH * 0.05f, 40.0f);
-	m_pTopScore->Score(645987);
+	m_pTopScore->Score(000);
 
 	//Play mode entites
 	m_pOnePlayerMode->Position(-200.0f, 35.0f);
@@ -277,8 +277,8 @@ void StartScreen::Render() {
 
 	m_pBackdrop->Render();
 	m_pRights->Render(); 
-	m_pPlayerOne->Render();
-	m_pPlayerTwo->Render();
+	//m_pPlayerOne->Render();
+	//m_pPlayerTwo->Render();
 	m_pHiScore->Render();
 	m_pOnePlayerMode->Render();
 	m_pTwoPlayerMode->Render();
@@ -287,8 +287,8 @@ void StartScreen::Render() {
 	m_pDates->Render();
 	m_pRights->Render();
 	m_pLogo->Render();
-	m_pPlayerOneScore->Render();
-	m_pPlayerTwoScore->Render();
+	//m_pPlayerOneScore->Render();
+	//m_pPlayerTwoScore->Render();
 	m_pTopScore->Render();
 	m_pLogo->Render();
 	

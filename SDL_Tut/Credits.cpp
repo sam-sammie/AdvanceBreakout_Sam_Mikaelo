@@ -2,10 +2,10 @@
 
 Credits::Credits() {
 
-	m_pMadeBy = new Texture("Made By:", "emulogic.ttf", 32, { 200,0,0 });
-	m_pSam = new Texture("SAMANTHA SAMAROO", "emulogic.ttf", 32, { 200,0,0 });
-	m_pAnd = new Texture("AND", "emulogic.ttf", 32, { 200,0,0 });
-	m_pMikaelo = new Texture("MIKAELO SAN JOSE", "emulogic.ttf", 32, { 200,0,0 });
+	m_pMadeBy = new Texture("Made By:", "ARCADEPI.ttf", 32, { 200,0,0 });
+	m_pSam = new Texture("SAMANTHA SAMAROO", "ARCADEPI.ttf", 32, { 200,0,0 });
+	m_pAnd = new Texture("AND", "ARCADEPI.ttf", 32, { 200,0,0 });
+	m_pMikaelo = new Texture("MIKAELO SAN JOSE", "ARCADEPI.ttf", 32, { 200,0,0 });
 
 
 	m_pBackground = new Texture("Backdrop.png");

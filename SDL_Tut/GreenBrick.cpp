@@ -1,6 +1,6 @@
 #include "GreenBrick.h"
 
-GreenBrick::GreenBrick()
+GreenBrick::GreenBrick(Player* inputPlayer, PlaySideBar* inputSideBar)
 {
 	m_pTimer = Timer::Instance();
 	m_pInput = InputManager::Instance();
@@ -9,6 +9,11 @@ GreenBrick::GreenBrick()
 	mVisible = false;
 	mAnimating = false;
 	Active(true);
+
+
+	m_pPlayer = inputPlayer;
+	m_pSideBar = inputSideBar;
+
 
 	m_pGreenBreakAnimation = new AnimatedTexture("Bricks/Green Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pGreenBreakAnimation->Parent(this);
@@ -67,7 +72,7 @@ void GreenBrick::Render()
 	if (Active()) {
 		m_pGreenBreakAnimation->Render();
 		m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
-		/*PhysEntity::Render();*/
+		PhysEntity::Render();
 	}
 }
 
@@ -89,6 +94,11 @@ bool GreenBrick::IsAnimating() {
 
 void GreenBrick::Hit(PhysEntity* other) {
 	m_pGreenBreakAnimation->Update();
+	if (m_pPlayer->Score() < 0) {
+		m_pPlayer->SetScore(0);
+	}
+	m_pPlayer->GreenBrickDestroyed();
+	m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 	Active(false);
 }

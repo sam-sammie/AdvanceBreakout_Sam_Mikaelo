@@ -1,6 +1,6 @@
 #include "OrangeBrick.h"
 
-OrangeBrick::OrangeBrick() 
+OrangeBrick::OrangeBrick(Player* inputPlayer, PlaySideBar* inputSideBar)
 {
 	m_pTimer = Timer::Instance();
 	m_pInput = InputManager::Instance();
@@ -10,6 +10,8 @@ OrangeBrick::OrangeBrick()
 	mAnimating = false;
 	Active(true);
 
+	m_pPlayer = inputPlayer;
+	m_pSideBar = inputSideBar;
 
 	m_pOrangeBreakAnimation = new AnimatedTexture("Bricks/Orange Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pOrangeBreakAnimation->Parent(this);
@@ -89,6 +91,11 @@ bool OrangeBrick::IsAnimating() {
 
 void OrangeBrick::Hit(PhysEntity* other) {
 	m_pOrangeBreakAnimation->Update();
+	if (m_pPlayer->Score() < 0) {
+		m_pPlayer->SetScore(0);
+	}
+	m_pPlayer->OrangeBrickDestroyed();
+	m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 	Active(false);
 }

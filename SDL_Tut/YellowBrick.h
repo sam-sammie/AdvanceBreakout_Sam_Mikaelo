@@ -3,8 +3,10 @@
 #include "AnimatedTexture.h"
 #include "InputManager.h"
 #include "AudioManager.h"
+#include "Player.h"
 #include "PhysEntity.h"
 #include "PhysicsManager.h"
+#include "PlaySideBar.h"
 
 using namespace SDLFramework;
 
@@ -17,6 +19,9 @@ private:
 	InputManager* m_pInput;
 	AudioManager* m_pAudio;
 
+	PlaySideBar* m_pSideBar;
+	Player* m_pPlayer;
+
 	AnimatedTexture* m_pYellowBreakAnimation;
 
 	bool mVisible;
@@ -28,7 +33,7 @@ protected:
 	bool IgnoreCollisions() override;
 
 public:
-	YellowBrick();
+	YellowBrick(Player* inputPlayer, PlaySideBar* inputSideBar);
 	~YellowBrick();
 
 	void Hit(PhysEntity* other);

@@ -3,8 +3,10 @@
 #include "AnimatedTexture.h"
 #include "InputManager.h"
 #include "AudioManager.h"
+#include "Player.h"
 #include "PhysEntity.h"
 #include "PhysicsManager.h"
+#include "PlaySideBar.h"
 
 namespace SDLFramework 
 {
@@ -16,8 +18,12 @@ namespace SDLFramework
 		Timer* m_pTimer;
 		InputManager* m_pInput;
 		AudioManager* m_pAudio;
+		
 
 		AnimatedTexture* m_pRedBreakAnimation;
+
+		PlaySideBar* m_pSideBar;
+		Player* m_pPlayer;
 
 		bool mVisible;
 		bool mAnimating;
@@ -26,12 +32,10 @@ namespace SDLFramework
 		bool IgnoreCollisions() override;
 
 	public:
-		RedBrick();
+		RedBrick(Player* inputPlayer, PlaySideBar* inputSideBar);
 		~RedBrick();
 
 		void Hit(PhysEntity* other) override;
-
-		int Score();
 
 		void Visible(bool visible);
 		bool IsAnimating();

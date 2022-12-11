@@ -1,11 +1,5 @@
-﻿  Red Brick.cpp
-  GameManager.cpp
-  Level.cpp
-  main.cpp
-  PlayScreen.cpp
-  ScreenManager.cpp
-  StartScreen.cpp
-D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\SDL_Tut\StartScreen.cpp(327,16): warning C4552: '-': result of expression not used
+﻿  GreenBrick.cpp
+  OrangeBrick.cpp
   Generating Code...
   SDL_Tut.vcxproj -> D:\Origins\GitHub\AdvanceBreakout_Sam_Mikaelo\Debug\SDL_Tut.exe
   The system cannot find the path specified.

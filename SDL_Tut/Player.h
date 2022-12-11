@@ -46,6 +46,7 @@ public:
 	int Lives();
 
 	void AddScore(int change);
+	void SetScore(int score);
 
 	void WasHit();
 

@@ -68,6 +68,10 @@ void Player::AddScore(int change) {
 	mScore += change;
 }
 
+void Player::SetScore(int score) {
+	mScore = score;
+}
+
 int Player::Score() {
 	return mScore;
 }
@@ -127,22 +131,18 @@ void Player::Render() {
 
 void Player::RedBrickDestroyed() {
 	mScore += 400;
-	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, -1);
 }
 
 void Player::OrangeBrickDestroyed() {
 	mScore += 300;
-	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, -1);
 }
 
 void Player::GreenBrickDestroyed() {
 	mScore += 200;
-	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, -1);
 }
 
 void Player::YellowBrickDestroyed() {
 	mScore += 100;
-	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, -1);
 }
 
 void Player::Hit(PhysEntity* other) {

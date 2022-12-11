@@ -1,6 +1,6 @@
 #include "YellowBrick.h"
 
-YellowBrick::YellowBrick()
+YellowBrick::YellowBrick(Player* inputPlayer, PlaySideBar* inputSideBar)
 {
 	m_pTimer = Timer::Instance();
 	m_pInput = InputManager::Instance();
@@ -9,6 +9,9 @@ YellowBrick::YellowBrick()
 	mVisible = false;
 	mAnimating = false;
 	Active(true);
+
+	m_pPlayer = inputPlayer;
+	m_pSideBar = inputSideBar;
 
 	m_pYellowBreakAnimation = new AnimatedTexture("Bricks/Yellow Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pYellowBreakAnimation->Parent(this);
@@ -37,6 +40,9 @@ void YellowBrick::Update()
 {
 	if (Active()) {
 		m_pYellowBreakAnimation->Update();
+		m_pPlayer->Update();
+		m_pSideBar->Update();
+
 	}
 	/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U)) 
 	{
@@ -86,6 +92,11 @@ bool YellowBrick::IsAnimating() {
 
 void YellowBrick::Hit(PhysEntity* other) {
 	m_pYellowBreakAnimation->Update();
+	if (m_pPlayer->Score() < 0) {
+		m_pPlayer->SetScore(0);
+	}
+	m_pPlayer->YellowBrickDestroyed();
+	m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 	Active(false);
 }

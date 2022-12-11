@@ -26,39 +26,40 @@ PlayScreen::PlayScreen() {
 	m_pPlayer->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
 	
 	// ---------------------- Red Bricks ------------------------------------------------------//
-	m_pBrickRow_1 = new RedBrick();
+	m_pBrickRow_1 = new RedBrick(m_pPlayer, m_pSideBar);
+
 	m_pBrickRow_1->Parent(this);
 	m_pBrickRow_1->Position(Graphics::SCREEN_WIDTH * 0.3f, Graphics::SCREEN_HEIGHT * 0.8f );
 	
-	m_pBrickRow_2 = new RedBrick();
+	m_pBrickRow_2 = new RedBrick(m_pPlayer, m_pSideBar);
 	m_pBrickRow_2->Parent(this);
 	m_pBrickRow_2->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pBrickRow_3 = new RedBrick();
+	m_pBrickRow_3 = new RedBrick(m_pPlayer, m_pSideBar);
 	m_pBrickRow_3->Parent(this);
 	m_pBrickRow_3->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pBrickRow_4 = new RedBrick();
+	m_pBrickRow_4 = new RedBrick(m_pPlayer, m_pSideBar);
 	m_pBrickRow_4->Parent(this);
 	m_pBrickRow_4->Position(Graphics::SCREEN_WIDTH * 0.6f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pBrickRow_5 = new RedBrick();
+	m_pBrickRow_5 = new RedBrick(m_pPlayer, m_pSideBar);
 	m_pBrickRow_5->Parent(this);
 	m_pBrickRow_5->Position(Graphics::SCREEN_WIDTH * 0.7f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pBrickRow_6 = new RedBrick();
+	m_pBrickRow_6 = new RedBrick(m_pPlayer, m_pSideBar);
 	m_pBrickRow_6->Parent(this);
 	m_pBrickRow_6->Position(Graphics::SCREEN_WIDTH * 0.8f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pBrickRow_7 = new RedBrick();
+	m_pBrickRow_7 = new RedBrick(m_pPlayer, m_pSideBar);
 	m_pBrickRow_7->Parent(this);
 	m_pBrickRow_7->Position(Graphics::SCREEN_WIDTH * 0.9f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pBrickRow_8 = new RedBrick();
+	m_pBrickRow_8 = new RedBrick(m_pPlayer, m_pSideBar);
 	m_pBrickRow_8->Parent(this);
 	m_pBrickRow_8->Position(Graphics::SCREEN_WIDTH * 1.0f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pBrickRow_9 = new RedBrick();
+	m_pBrickRow_9 = new RedBrick(m_pPlayer, m_pSideBar);
 	m_pBrickRow_9->Parent(this);
 	m_pBrickRow_9->Position(Graphics::SCREEN_WIDTH * 1.1f, Graphics::SCREEN_HEIGHT * 0.8f);
 
@@ -74,39 +75,39 @@ PlayScreen::PlayScreen() {
 	Redbrick[8] = m_pBrickRow_9;
 
 	// ---------------------- Yellow Bricks ------------------------------------------------------//
-	m_pYellow_1 = new YellowBrick();
+	m_pYellow_1 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_1->Parent(this);
 	m_pYellow_1->Position(Graphics::SCREEN_WIDTH * 0.3f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pYellow_2 = new YellowBrick();
+	m_pYellow_2 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_2->Parent(this);
 	m_pYellow_2->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pYellow_3 = new YellowBrick();
+	m_pYellow_3 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_3->Parent(this);
 	m_pYellow_3->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pYellow_4 = new YellowBrick();
+	m_pYellow_4 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_4->Parent(this);
 	m_pYellow_4->Position(Graphics::SCREEN_WIDTH * 0.6f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pYellow_5 = new YellowBrick();
+	m_pYellow_5 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_5->Parent(this);
 	m_pYellow_5->Position(Graphics::SCREEN_WIDTH * 0.7f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pYellow_6 = new YellowBrick();
+	m_pYellow_6 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_6->Parent(this);
 	m_pYellow_6->Position(Graphics::SCREEN_WIDTH * 0.8f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pYellow_7 = new YellowBrick();
+	m_pYellow_7 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_7->Parent(this);
 	m_pYellow_7->Position(Graphics::SCREEN_WIDTH * 0.9f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pYellow_8 = new YellowBrick();
+	m_pYellow_8 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_8->Parent(this);
 	m_pYellow_8->Position(Graphics::SCREEN_WIDTH * 1.0f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pYellow_9 = new YellowBrick();
+	m_pYellow_9 = new YellowBrick(m_pPlayer, m_pSideBar);
 	m_pYellow_9->Parent(this);
 	m_pYellow_9->Position(Graphics::SCREEN_WIDTH * 1.1f, Graphics::SCREEN_HEIGHT * 0.8f);
 
@@ -122,39 +123,39 @@ PlayScreen::PlayScreen() {
 
 	// ---------------------- Orange Bricks ------------------------------------------------------//
 	
-	m_pOrange_1 = new OrangeBrick();
+	m_pOrange_1 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_1->Parent(this);
 	m_pOrange_1->Position(Graphics::SCREEN_WIDTH * 0.3f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pOrange_2 = new OrangeBrick();
+	m_pOrange_2 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_2->Parent(this);
 	m_pOrange_2->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pOrange_3 = new OrangeBrick();
+	m_pOrange_3 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_3->Parent(this);
 	m_pOrange_3->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pOrange_4 = new OrangeBrick();
+	m_pOrange_4 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_4->Parent(this);
 	m_pOrange_4->Position(Graphics::SCREEN_WIDTH * 0.6f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pOrange_5 = new OrangeBrick();
+	m_pOrange_5 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_5->Parent(this);
 	m_pOrange_5->Position(Graphics::SCREEN_WIDTH * 0.7f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pOrange_6 = new OrangeBrick();
+	m_pOrange_6 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_6->Parent(this);
 	m_pOrange_6->Position(Graphics::SCREEN_WIDTH * 0.8f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pOrange_7 = new OrangeBrick();
+	m_pOrange_7 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_7->Parent(this);
 	m_pOrange_7->Position(Graphics::SCREEN_WIDTH * 0.9f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pOrange_8 = new OrangeBrick();
+	m_pOrange_8 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_8->Parent(this);
 	m_pOrange_8->Position(Graphics::SCREEN_WIDTH * 1.0f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pOrange_9 = new OrangeBrick();
+	m_pOrange_9 = new OrangeBrick(m_pPlayer, m_pSideBar);
 	m_pOrange_9->Parent(this);
 	m_pOrange_9->Position(Graphics::SCREEN_WIDTH * 1.1f, Graphics::SCREEN_HEIGHT * 0.8f);
 
@@ -169,39 +170,39 @@ PlayScreen::PlayScreen() {
 	Orangebrick[8] = m_pOrange_9;
 	// ---------------------- Green Bricks ------------------------------------------------------//
 
-	m_pGreen_1 = new GreenBrick();
+	m_pGreen_1 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_1->Parent(this);
 	m_pGreen_1->Position(Graphics::SCREEN_WIDTH * 0.3f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pGreen_2 = new GreenBrick();
+	m_pGreen_2 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_2->Parent(this);
 	m_pGreen_2->Position(Graphics::SCREEN_WIDTH * 0.4f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pGreen_3 = new GreenBrick();
+	m_pGreen_3 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_3->Parent(this);
 	m_pGreen_3->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pGreen_4 = new GreenBrick();
+	m_pGreen_4 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_4->Parent(this);
 	m_pGreen_4->Position(Graphics::SCREEN_WIDTH * 0.6f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pGreen_5 = new GreenBrick();
+	m_pGreen_5 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_5->Parent(this);
 	m_pGreen_5->Position(Graphics::SCREEN_WIDTH * 0.7f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pGreen_6 = new GreenBrick();
+	m_pGreen_6 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_6->Parent(this);
 	m_pGreen_6->Position(Graphics::SCREEN_WIDTH * 0.8f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pGreen_7 = new GreenBrick();
+	m_pGreen_7 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_7->Parent(this);
 	m_pGreen_7->Position(Graphics::SCREEN_WIDTH * 0.9f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pGreen_8 = new GreenBrick();
+	m_pGreen_8 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_8->Parent(this);
 	m_pGreen_8->Position(Graphics::SCREEN_WIDTH * 1.0f, Graphics::SCREEN_HEIGHT * 0.8f);
 
-	m_pGreen_9 = new GreenBrick();
+	m_pGreen_9 = new GreenBrick(m_pPlayer, m_pSideBar);
 	m_pGreen_9->Parent(this);
 	m_pGreen_9->Position(Graphics::SCREEN_WIDTH * 1.1f, Graphics::SCREEN_HEIGHT * 0.8f);
 
@@ -445,47 +446,28 @@ void PlayScreen::Update() {
 	}
 
 
-			/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
+			/*if (Active())
 			{
-				for (int i = 0; i < 9 - 1; i++) {
-					Redbrick[0]->Update();
-					Redbrick[i] = Redbrick[i + 1];
-					
-				}
+			
 				m_pPlayer->RedBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 				
-			}
+			}*/
 			
-			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_O))
+			/*if (Active())
 			{
-				for (int i = 0; i < 9 - 1; i++) {
-					Orangebrick[0]->Update();
-					Orangebrick[i] = Orangebrick[i + 1];
-
-				}
 				m_pPlayer->OrangeBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 			}
 			
-			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_I))
+			if (Active())
 			{
-				for (int i = 0; i < 9 - 1; i++) {
-					Greenbrick[0]->Update();
-					Greenbrick[i] = Greenbrick[i + 1];
-
-				}
 				m_pPlayer->GreenBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 			}
 			
-			if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_U))
+			if (Active())
 			{
-				for (int i = 0; i < 9 - 1; i++) {
-					Yellowbrick[0]->Update();
-					Yellowbrick[i] = Yellowbrick[i + 1];
-
-				}
 				m_pPlayer->YellowBrickDestroyed();
 				m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 			}		*/

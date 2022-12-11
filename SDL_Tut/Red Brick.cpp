@@ -1,6 +1,6 @@
 #include "Red Brick.h"
 
-RedBrick::RedBrick()
+RedBrick::RedBrick(Player* inputPlayer, PlaySideBar* inputSideBar)
 {
 	m_pTimer = Timer::Instance();
 	m_pInput = InputManager::Instance();
@@ -9,6 +9,9 @@ RedBrick::RedBrick()
 	mVisible = false;
 	mAnimating = false;
 	Active(true);
+
+	m_pPlayer = inputPlayer;
+	m_pSideBar = inputSideBar;
 
 	m_pRedBreakAnimation = new AnimatedTexture("Bricks/Red Destroy.png", 0, 0, 67, 100, 2, 0.01f, AnimatedTexture::Vertical);
 	m_pRedBreakAnimation->Parent(this);
@@ -37,6 +40,8 @@ void RedBrick::Update()
 {
 	if (mAnimating) {
 		m_pRedBreakAnimation->Update();
+		m_pPlayer->Update();
+		m_pSideBar->Update();
 
 	}
 	/*if (InputManager::Instance()->KeyPressed(SDL_SCANCODE_P)) 
@@ -61,7 +66,6 @@ void RedBrick::Render()
 {
 	if (Active()) {
 		m_pRedBreakAnimation->Render();
-		m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 		PhysEntity::Render();
 	}
 }
@@ -84,6 +88,8 @@ bool RedBrick::IsAnimating() {
 
 void RedBrick::Hit(PhysEntity* other) {
 	m_pRedBreakAnimation->Update();
+	m_pPlayer->RedBrickDestroyed();
+	m_pSideBar->SetPlayerScore(m_pPlayer->Score());
 	m_pAudio->PlaySFX("SFX/Hitmarker.wav", 0, 1);
 	Active(false);
 }
